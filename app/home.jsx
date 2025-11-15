@@ -1,16 +1,21 @@
+import Navbar from '@/components/navbar';
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-end justify-start bg-[url('/bg.svg')] bg-cover">
+    
+    <>
+    <div className="flex min-h-screen items-end justify-start bg-[url('/bg.svg')] bg-cover"><Navbar />
+        
       {/* New Wrapper Div for the text block */}
       <div className="flex flex-col mb-36 ml-10 text-white"> 
         
         {/* Removed relative, mb-40, left-10 */}
-        <h1 className="text-6xl " style={{fontFamily: 'var(--font-geist)'}}>
+        <h1 className="text-6xl font-semibold " style={{fontFamily: 'var(--font-geist)'}}>
           From Nature's Best to Your Table
         </h1>
         
         {/* Changed span to h3 for semantic meaning, removed relative, mb-32 */}
-        <h3 className="text-2xl mt-4" style={{fontFamily: 'var(--font-geist)'}}>
+        <h3 className="text-2xl font-semibold mt-4" style={{fontFamily: 'var(--font-geist)'}}>
           Purity, Nutrition, and Taste!
         </h3>
 
@@ -20,7 +25,7 @@ export default function Home() {
 
         <div className="flex ">
             <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle">
-                Explore Products <img src="/arrow-right.svg" className="inline-block ml-1  "/>
+                Explore Products <img src="/button.svg" className="inline-block ml-2 hover:animate-pulse hover:rotate-320"/>
             </button>
             <button className="mt-6 ml-4 rounded-full bg-white px-6 py-3 text-lg font-semibold text-black">
                 Our Story
@@ -30,5 +35,6 @@ export default function Home() {
         
       </div>
     </div>
+    </>
   );
 }

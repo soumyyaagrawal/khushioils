@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,7 +9,15 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+
 });
+
+
+ const plusJakartaSans = Plus_Jakarta_Sans({
+      subsets: ['latin'],
+      variable: '--font-plus-jakarta-sans', // Optional: for use with CSS variables (e.g., in Tailwind CSS)
+    });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -18,9 +26,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={plusJakartaSans.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.variable} antialiased`}
       >
         {children}
       </body>
