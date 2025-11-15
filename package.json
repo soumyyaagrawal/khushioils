@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "cardshowcase-3qxj": "https://installable-framer.vercel.app/m/CardShowcase-3qxj.js@1dwe9Z9NXC9obVzYe7mU",
+    "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
+    "horizontalscroller-rfzu": "https://installable-framer.vercel.app/m/HorizontalScroller-RFzU.js@1bpMLdw1m6vtxQeNnqo9",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",

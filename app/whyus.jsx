@@ -1,6 +1,6 @@
 import InfiniteScroll from "@/components/infinitescroll";
-import LineGSAP from "@/components/line";
-export default function WhyUs() {
+import ShowcaseWrapper from "@/components/cardshowcase";
+    export default function WhyUs() {
   return (
     // 1. Main padding and background
     <div className="py-20 bg-white"> 
@@ -22,7 +22,7 @@ export default function WhyUs() {
           {/* Right Column: Paragraph Text and Button */}
           <div className="flex flex-col justify-start text-lg text-gray-700">
             <p className="mb-6">
-              TaniSmart, where tradition meets innovation, is committed to transforming the agricultural industry through sustainable practices and cutting-edge technology. Our mission is to empower farmers with advanced tools and resources that not only enhance productivity but also promote environmental stewardship.
+              At Bhagwati Industries, we believe in creating products that combine purity, innovation, and sustainability. Established with a vision to promote healthy living, we specialize in producing premium edible oils sourced from our state-of-the-art Integrated Rice Plant. Our journey is fueled by a commitment to quality and a dedication to delivering the best to every home.
             </p>
             
             
@@ -72,7 +72,7 @@ export default function WhyUs() {
       </div>
 
         <InfiniteScroll />
-
+        
     </div>
   );
 }           
