@@ -1,9 +1,78 @@
+import InfiniteScroll from "@/components/infinitescroll";
+import LineGSAP from "@/components/line";
 export default function WhyUs() {
   return (
-    <div  className="flex min-h-screen flex-col items-center justify-center py-2 bg-white">
-        <h1 className="text-4xl text-black max-w-xl font-bold mb-6" style={{fontFamily: 'var(--font-geist-sans)'}}>Committed to delivering excellence through tradition, quality, and natural goodness.</h1>
+    // 1. Main padding and background
+    <div className="py-20 bg-white"> 
+        
+      {/* 2. Content Container: Constrains width and centers the entire section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* 3. Top Section (Headline and Body Text) using a Grid (2 Columns) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-20">
+          
+          {/* Left Column: Headline */}
+          <div className="flex flex-col justify-start">
+            {/* Changed from h1 to h2 for section title semantics */}
+            <h2 className="text-6xl text-gray-900 leading-tight max-w-lg">
+              Innovating the Future of Agriculture
+            </h2>
+          </div>
 
+          {/* Right Column: Paragraph Text and Button */}
+          <div className="flex flex-col justify-start text-lg text-gray-700">
+            <p className="mb-6">
+              TaniSmart, where tradition meets innovation, is committed to transforming the agricultural industry through sustainable practices and cutting-edge technology. Our mission is to empower farmers with advanced tools and resources that not only enhance productivity but also promote environmental stewardship.
+            </p>
+            
+            
+            {/* Learn More Button/Link */}
+            <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle w-[280px]">
+                Explore Products <img src="/button.svg" className="inline-block ml-8 hover:animate-pulse hover:rotate-320"/>
+            </button>
+          </div>
 
+          
+        </div>
 
+        {/* --- Separator Line --- */}
+        <div className="border-t border-gray-300 mt-10 mb-10"></div>
+        
+        {/* 4. Bottom Section (Stats/Metrics) using a Grid (3 Columns) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 pt-10  ">
+          
+          {/* Stat 1: 100% */}
+          <div>
+            <img src="/olive-oil (1).png" alt="Satisfaction Icon" className="h-20 w-20  mb-4"/>
+            <div className="text-xl font-semibold text-gray-900 mb-2">100% Natural Oils</div>
+            <p className="text-sm text-gray-600">
+              Our oils are extracted from the finest natural sources, ensuring purity and authentic taste in every drop.
+            </p>
+          </div>
 
-    </div>  )};
+          {/* Stat 2: 20+ */}
+          <div>
+            <img src="/leaves.png" alt="leaves Icon" className="h-20 w-20 mb-4"/>
+            <div className="text-xl font-semibold text-gray-900 mb-2">Cold Processed Oil</div>
+            <p className="text-sm text-gray-600">
+             Traditional cold-pressed method preserves natural nutrients, vitamins, and the rich flavor of our oils.
+            </p>
+            {/* <div className="w-8 h-1 bg-blue-500 mt-6"></div> Bottom Divider */}
+          </div>
+          
+          {/* Stat 3: 160K */}
+          <div>
+            <img src="/approved.png" alt="Farmer Icon" className="h-20 w-20 mb-4"/>
+            <div className="text-xl font-semibold text-gray-900 mb-2">Trusted Since 1985</div>
+            <p className="text-sm text-gray-600">
+              Four decades of excellence and trust, serving families across India with premium quality cooking oils.
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <InfiniteScroll />
+
+    </div>
+  );
+}           

@@ -27,7 +27,7 @@ export default function Home() {
             <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle">
                 Explore Products <img src="/button.svg" className="inline-block ml-2 hover:animate-pulse hover:rotate-320"/>
             </button>
-            <button className="mt-6 ml-4 rounded-full bg-white px-6 py-3 text-lg font-semibold text-black">
+            <button className="mt-6 ml-4 rounded-full bg-white px-6 py-1 text-lg font-semibold text-black hover:bg-transparent hover:text-white transition duration-300 border border-white">
                 Our Story
             </button>
 
