@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EventsDiv = ({ eventName, eventDate, imageUrl, description, isLast = false, isActive = true }) => {
+const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = false, isActive = true }) => {
   return (
     <div className='min-w-full flex flex-col justify-center items-flex-start'>
       <div className={`text-4xl font-semibold text-gray-900 transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
@@ -38,4 +38,4 @@ const EventsDiv = ({ eventName, eventDate, imageUrl, description, isLast = false
   )
 }
 
-export default EventsDiv;
+export default ProductDiv;

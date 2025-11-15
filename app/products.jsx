@@ -23,7 +23,7 @@
 
 
 "use client";
-import EventsDiv from "@/components/EventsDiv";
+import ProductDiv from "@/components/ProductDiv";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -126,7 +126,7 @@ export default function Products() {
         </h2>
         <div ref={eventsContainerRef} className="events w-full flex flex-row justify-flex-start items-center pl-[170px] pr-[100px]">
           {eventsData.map((event, index) => (
-            <EventsDiv
+            <ProductDiv
               key={index}
               eventName={event.eventName}
               eventDate={event.eventDate}
