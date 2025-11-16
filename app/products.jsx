@@ -119,10 +119,14 @@ export default function Products()
 
   return (
     <div style={{ position: "relative" }}>
-      <section ref={eventsSectionRef} className="bg-[#FFF2CE] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[16vh]">
-        <h2 className="pb-20 text-center justify-start text-5xl font-bold text-black font-['Oxanium']">
+      <section ref={eventsSectionRef} className="bg-[#1D5B37] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[16vh]">
+
+
+
+        <h2 className="pb-20 text-center justify-start text-5xl font-bold text-gray-200 font-['Oxanium']">
           Featured Products
         </h2>
+        
         <div ref={eventsContainerRef} className="events w-full flex flex-row justify-flex-start items-center pl-[170px] pr-[100px]">
           {eventsData.map((event, index) => (
             <ProductDiv
@@ -142,17 +146,27 @@ export default function Products()
 
 
 
-<div className="bg-white w-full h-[100vh] text-black">
+<div className="bg-white w-full text-black">
+
+  
 
 <div className="flex flex-col justify-center items-center pt-20 space-y-6">
 
+
+
   <h2 className="text-4xl mt-1 font-['plusJakartaSans'] ">
-    Our Other Products
+    Our Other Products <div className="w-28 h-[3px] mx-auto my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800"></div>
   </h2>
   <h3 className="text-xl text-gray-600 font-['plusJakartaSans'] text-center mt-0  ">
     Explore our complete range of quality products
-     <div className="w-28 h-[3px] mx-auto my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800"></div>
+     
   </h3>
+  <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#FFF2CE] rounded-full blur-3xl opacity-70 z-30"></div>  
+   <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#FFF2CE] rounded-full blur-3xl opacity-70 z-30"></div>  
+    <div className="absolute bottom-[500px] left-0 w-72 h-72 bg-[#FFF2CE] rounded-full blur-3xl opacity-70 z-30"></div>  
+    <div className="absolute bottom-[500px] right-0 w-72 h-72 bg-[#FFF2CE] rounded-full blur-3xl opacity-70 z-30"></div>  
+    <div className="absolute bottom-[300px] left-0 w-72 h-72 bg-[#FFF2CE] rounded-full blur-3xl opacity-70 z-30"></div>  
+    <div className="absolute bottom-[300px] right-0 w-72 h-72 bg-[#FFF2CE] rounded-full blur-3xl opacity-70 z-30"></div>  
  
 
   <motion.div
