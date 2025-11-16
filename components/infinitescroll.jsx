@@ -106,7 +106,7 @@ const InfiniteScroll = ({ isReversed = false, className }) => {
       onPointerLeave={onPointerLeave}
       style={{
         position: "relative",
-        top: "60px", // moved slightly lower
+        // top: "60px", // moved slightly lower
         backgroundColor: "#1D5B37",
         // transform: "rotate(-1deg)",
         transformOrigin: "center",

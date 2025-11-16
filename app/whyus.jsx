@@ -3,8 +3,11 @@ import ShowcaseWrapper from "@/components/cardshowcase";
     export default function WhyUs() {
   return (
     // 1. Main padding and background
+     <>
+         <InfiniteScroll />
+
     <div className="py-20 bg-white"> 
-        
+
       {/* 2. Content Container: Constrains width and centers the entire section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -71,8 +74,9 @@ import ShowcaseWrapper from "@/components/cardshowcase";
         </div>
       </div>
 
-        <InfiniteScroll />
+       
         
     </div>
+    </>
   );
 }           

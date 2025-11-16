@@ -1,10 +1,11 @@
 import Navbar from '@/components/navbar';
+import InfiniteScroll from '@/components/infinitescroll';
 
 export default function Home() {
   return (
     
     <>
-    <div className="flex min-h-screen items-end justify-start bg-[url('/bg.svg')] bg-cover"><Navbar />
+    <div className="flex min-h-screen items-end justify-start bg-[url('/bg.svg')] bg-cover pb-0 mb-0 ">
         
       {/* New Wrapper Div for the text block */}
       <div className="flex flex-col mb-36 ml-10 text-white"> 
