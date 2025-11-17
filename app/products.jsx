@@ -27,7 +27,7 @@ const names =["Boiled Rice","Boiled Swarna Rice","Broken White Rice","White Rice
 
 
 
-    <div className="bg-white relative h-[750px] py-20 overflow-visible">
+    <div className="bg-white relative min-h-full py-20 overflow-visible">
       <div className=" w-full text-black">
         {/* <Image
           src="/industry.webp"
@@ -38,7 +38,7 @@ const names =["Boiled Rice","Boiled Swarna Rice","Broken White Rice","White Rice
         /> */}
 
         <div className="flex flex-col justify-center items-center space-y-3">
-          <h1 className="text-4xl font-black font-['plusJakartaSans'] z-10 ">
+          <h1 className="text-6xl font-black font-['plusJakartaSans'] z-10 ">
             Our Other Products
             <div className="w-28 h-[3px] mx-auto my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div>
           </h1>

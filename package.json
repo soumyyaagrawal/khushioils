@@ -11,9 +11,13 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "cardshowcase-3qxj": "https://installable-framer.vercel.app/m/CardShowcase-3qxj.js@1dwe9Z9NXC9obVzYe7mU",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "horizontalscroller-rfzu": "https://installable-framer.vercel.app/m/HorizontalScroller-RFzU.js@1bpMLdw1m6vtxQeNnqo9",
+    "lucide-react": "^0.554.0",
+    "motion": "^12.23.24",
     "next": "16.0.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -26,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.17",
+    "tw-animate-css": "^1.4.0"
   }
 }
