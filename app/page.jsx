@@ -1,10 +1,11 @@
-import Image from "next/image";
 import React from "react";
 import Home from "./home.jsx";
 import Intro from "./intro.jsx";
 import Products from "./products.jsx";
 import Navbar from '@/components/navbar';
 import Whyus from "./whyus.jsx";
+import HorizontalScrolling from "@/components/HorizontalScrolling.jsx";
+
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <Navbar />
       <Home />
       <Intro />
+      <HorizontalScrolling />
       <Products />
       <Whyus />
     </div>
