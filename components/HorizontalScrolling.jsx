@@ -106,7 +106,7 @@ export default function HorizontalScrolling() {
         ref={eventsSectionRef}
         className="bg-[#FFF2CE] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[15vh]"
       >
-        <h2 className="pb-20 text-center justify-start text-5xl font-bold text-gray-200 font-['Oxanium']">
+        <h2 className="pb-20 text-center justify-start text-5xl font-bold text-gray-900 font-['Oxanium']">
           Featured Products
         </h2>
 

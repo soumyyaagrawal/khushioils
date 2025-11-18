@@ -3,7 +3,7 @@ import React from 'react'
 const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = false, isActive = true }) => {
   return (
     <div className='min-w-full flex flex-col justify-center items-flex-start'>
-      <div className={`text-4xl font-semibold text-gray-200 transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
+      <div className={`text-4xl font-semibold text-gray-900 transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
         {eventName}
       </div>
       <div className="relative mt-8">
@@ -16,7 +16,7 @@ const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = fals
             </div>
           )}
         </div>
-        <div className={`pt-2 text-6xl text-gray-200 font-semibold font-['Montserrat'] transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
+        <div className={`pt-2 text-6xl text-gray-900 font-semibold font-['Montserrat'] transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
           {eventDate}
         </div>
       </div>
@@ -27,7 +27,7 @@ const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = fals
           alt={`${eventName} event`}
           loading="lazy"
         />
-        <div className="justify-end text-gray-200 flex flex-col text-2xl font-normal font-['Montserrat'] w-[40%]">
+        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal font-['Montserrat'] w-[40%]">
           {description}
         </div>
       </div>
