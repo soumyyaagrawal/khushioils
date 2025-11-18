@@ -132,7 +132,7 @@ export default function Whyus() {
 
     <div className="flex flex-col items-center"> 
 
-       <div className="w-100 h-48 p-8 mt-4 bg-[url('/oildrop.png')] bg-cover bg-[position:left_108px_center] bg-blur-[1px]
+       <div className="w-100 h-48 p-8 mt-4 bg-[url('/oildrop.png')] bg-cover bg-[position:left_112px_center] bg-blur-[1px]
  rounded-4xl shadow-sm text-black hover:shadow-2xl transition-shadow duration-300">
         <span className="text-4xl font-bold mt-2">
       <CountUp to={15} />+ 
