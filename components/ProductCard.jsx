@@ -2,7 +2,7 @@
 
 export default function ProductCard({ img, title, subtitle }) {
   return (
-    <div className="relative group w-96 h-72 overflow-hidden rounded-lg [clip-path:inset(0_round_16px)]">
+    <div className="relative group w-96 h-64 overflow-hidden rounded-lg [clip-path:inset(0_round_16px)]">
 
   {/* IMAGE */}
   <img

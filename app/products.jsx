@@ -27,7 +27,7 @@ const names =["Boiled Rice","Boiled Swarna Rice","Broken White Rice","White Rice
 
 
 
-    <div className="bg-white relative min-h-full py-20 overflow-visible">
+    <div className="bg-white relative min-h-full py-4 overflow-visible">
       <div className=" w-full text-black">
         {/* <Image
           src="/industry.webp"
@@ -37,12 +37,12 @@ const names =["Boiled Rice","Boiled Swarna Rice","Broken White Rice","White Rice
           className="absolute  top-0 left-0 w-full h-full object-cover opacity-60  blur-[2px] pointer-events-none z-0"
         /> */}
 
-        <div className="flex flex-col justify-center items-center space-y-3">
-          <h1 className="text-6xl font-black font-['plusJakartaSans'] z-10 ">
+        <div className="flex flex-col justify-center items-center mt-0 ">
+          <h1 className="text-6xl font-black font-['plusJakartaSans'] z-10 mt-0 ">
             Our Other Products
-            <div className="w-28 h-[3px] mx-auto my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div>
+            {/* <div className="w-28 h-[3px] mx-auto my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div> */}
           </h1>
-          <h3 className="text-2xl text-black font-bold font-['plusJakartaSans'] text-center z-10 ">
+          <h3 className="text-2xl text-black font-bold font-['plusJakartaSans'] text-center z-10">
             Explore our complete range of quality products
           </h3>
           
