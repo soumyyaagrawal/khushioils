@@ -193,7 +193,7 @@ export default function Whyus() {
      
    
 <div
-    className=" flex items-center justify-center 
+    className=" flex items-center justify-center m-x-2
       absolute            
       bottom- -1   
       text-white rounded-2xl         
@@ -203,7 +203,9 @@ export default function Whyus() {
       translate-x-1/4     
       translate-y-1/4     
     " style={{
-        width: "100px",
+      padding:"4px",
+      height:"26px",
+        width: "auto",
         backdropFilter: "blur(48px)",
         WebkitBackdropFilter: "blur(48px)",
         background: "rgba(60, 75, 50, 0.35)",
@@ -213,7 +215,7 @@ export default function Whyus() {
 
 
       <div
-    className=" flex items-center justify-center 
+    className=" flex items-center justify-center
       absolute            
       bottom- -1   
       text-white rounded-2xl         
@@ -223,19 +225,21 @@ export default function Whyus() {
       translate-x-1/4     
       translate-y-1/4     
     " style={{
-        width: "100px",
+      padding:"4px",
+      height:"26px",
+        width: "auto",
         backdropFilter: "blur(48px)",
         WebkitBackdropFilter: "blur(48px)",
         background: "rgba(60, 75, 50, 0.35)",
         border: "0.5px solid rgba(255, 255, 255, 0.28)",
            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} >  Solar Panels</div>
+      }} >  Biofuel Burner</div>
   
 
     <ul className="list-disc list-inside text-sm font-semibold">
         <li>Eco-Friendly.</li>
         <li>Carbon Neutral.</li>
-        <li>Green Processing.</li>
+        <li>Green Energy.</li>
       </ul>
 
     
