@@ -1,4 +1,5 @@
 import CountUp from "@/components/CountUp.jsx";
+import GlassDiv from "@/components/glassdiv";
 
 export default function Whyus() {
   return (
@@ -12,14 +13,14 @@ export default function Whyus() {
 
   <div 
   // Main card styling: relative for the absolute drop
-  className="relative w-100 h-84 p-8 mt-4 bg-gray-200 rounded-4xl shadow-sm hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
+  className="relative w-100 h-84 p-8 mt-4 bg-gray-200 rounded-4xl shadow-sm hover:shadow-2xl transition-shadow duration-300 overflow-hidden font-semibold"
 >
   {/* Content Layer (z-index 10) */}
   <div className="relative z-10 text-gray-900">
     
     {/* Heading */}
     <span className="text-4xl font-bold">
-      <CountUp to={1000} />+ 
+      <CountUp to={1000} />+
     </span>
     Certification
     <br />
@@ -110,7 +111,7 @@ export default function Whyus() {
 
 
 
-       <div className="w-100 h-48 p-8 m-4 bg-gray-900 rounded-4xl shadow-sm hover:shadow-2xl transition-shadow duration-300 text-white ">
+       <div className="w-100 h-48 p-8 m-4 bg-gray-900 rounded-4xl shadow-sm hover:shadow-2xl transition-shadow duration-300 text-white font-semibold">
 <span className="text-4xl font-bold mt-2">
       <CountUp to={500} />+  
     </span>
@@ -132,7 +133,7 @@ export default function Whyus() {
 
     <div className="flex flex-col items-center"> 
 
-       <div className="w-100 h-48 p-8 mt-4 bg-[url('/oildrop.png')] bg-cover bg-[position:left_108px_center] bg-blur-[1px]
+       <div className="w-100 h-48 p-8 mt-4 bg-[url('/oildrop.png')] bg-cover bg-[position:left_108px_center] bg-blur-[1px] font-semibold
  rounded-4xl shadow-sm text-black hover:shadow-2xl transition-shadow duration-300">
         <span className="text-4xl font-bold mt-2">
       <CountUp to={15} />+ 
@@ -180,20 +181,65 @@ export default function Whyus() {
 
        </div>
 
-        <div className="w-318 h-44 p-8 ml-32 mt-2 bg-[#e4bf6e] bg-cover bg-[position:bottom_4px_center] bg-blur-[1px]
- rounded-4xl shadow-sm text-black hover:shadow-2xl transition-shadow duration-300">
+        <div className=" relative w-318 h-44 p-8 ml-32 mt-2 bg-[#1D5B37] bg-cover bg-[position:bottom_4px_center] bg-blur-[1px] 
+ rounded-4xl shadow-sm text-white hover:shadow-2xl transition-shadow duration-300">
         <span className="text-4xl font-bold mt-2">
-      Zero Wastage
+     <span  className="font-semibold">Zero Wastage</span> 
     </span>
     <br />
     <span className="text-lg font-bold">Sustainable Practice</span> 
     <br />
+{/* e4bf6e */}
+     
+   
+<div
+    className=" flex items-center justify-center 
+      absolute            
+      bottom- -1   
+      text-white rounded-2xl         
+      right-14            
+      z-10                             
+      scale-150           
+      translate-x-1/4     
+      translate-y-1/4     
+    " style={{
+        width: "100px",
+        backdropFilter: "blur(48px)",
+        WebkitBackdropFilter: "blur(48px)",
+        background: "rgba(60, 75, 50, 0.35)",
+        border: "0.5px solid rgba(255, 255, 255, 0.28)",
+           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+      }} >  Solar Panels</div>
 
-    <ul className="list-disc list-inside text-sm">
+
+      <div
+    className=" flex items-center justify-center 
+      absolute            
+      bottom- -1   
+      text-white rounded-2xl         
+      right-54            
+      z-10                             
+      scale-150           
+      translate-x-1/4     
+      translate-y-1/4     
+    " style={{
+        width: "100px",
+        backdropFilter: "blur(48px)",
+        WebkitBackdropFilter: "blur(48px)",
+        background: "rgba(60, 75, 50, 0.35)",
+        border: "0.5px solid rgba(255, 255, 255, 0.28)",
+           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+      }} >  Solar Panels</div>
+  
+
+    <ul className="list-disc list-inside text-sm font-semibold">
         <li>Eco-Friendly.</li>
         <li>Carbon Neutral.</li>
         <li>Green Processing.</li>
       </ul>
+
+    
+
 </div>
 
         
