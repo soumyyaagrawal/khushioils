@@ -4,15 +4,15 @@ export default function Whyus() {
   return (
     <div className="w-full h-[100vh] bg-white mt-8">   
 
-<h1 className="font-semibold text-6xl ml-12">What Sets Us Apart 
-   <div className="w-28 h-[3px] mx-auto my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div>
+<h1 className="font-semibold text-6xl ml-16">What Sets Us Apart 
+   {/* <div className="w-28 h-[3px] my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div> */}
 </h1>
 
-    <div className="flex flex-row justify-center gap-4 mt-4 ml-8 "> 
+    <div className="flex flex-row justify-center gap-4 mt-4 ml-0 "> 
 
   <div 
   // Main card styling: relative for the absolute drop
-  className="relative w-100 h-84 p-8 m-4 bg-gray-200 rounded-4xl shadow-sm hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
+  className="relative w-100 h-84 p-8 mt-4 bg-gray-200 rounded-4xl shadow-sm hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
 >
   {/* Content Layer (z-index 10) */}
   <div className="relative z-10 text-gray-900">
@@ -116,7 +116,7 @@ export default function Whyus() {
     </span>
      Awards
     <br />
-    <span className="text-lg font-bold">Industrial Recognition</span> 
+    <span className="text-lg font-bold w-70%">Industrial Recognition</span> 
     <br />
     <ul className="list-disc list-inside text-sm">
         <li>Excellence Awards.</li>
@@ -180,8 +180,8 @@ export default function Whyus() {
 
        </div>
 
-        <div className="w-320 h-44 p-8 ml-56 mt-2 bg-[url('/solar.png')] bg-cover bg-[position:bottom_4px_center] bg-blur-[1px]
- rounded-4xl shadow-sm text-white hover:shadow-2xl transition-shadow duration-300">
+        <div className="w-318 h-44 p-8 ml-32 mt-2 bg-[#e4bf6e] bg-cover bg-[position:bottom_4px_center] bg-blur-[1px]
+ rounded-4xl shadow-sm text-black hover:shadow-2xl transition-shadow duration-300">
         <span className="text-4xl font-bold mt-2">
       Zero Wastage
     </span>
