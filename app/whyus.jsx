@@ -219,7 +219,7 @@ export default function Whyus() {
       absolute            
       bottom- -1   
       text-white rounded-2xl         
-      right-54            
+      right-56            
       z-10                             
       scale-150           
       translate-x-1/4     
@@ -234,6 +234,27 @@ export default function Whyus() {
         border: "0.5px solid rgba(255, 255, 255, 0.28)",
            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
       }} >  Biofuel Burner</div>
+
+      <div
+    className=" flex items-center justify-center
+      absolute            
+      bottom-24  
+      text-white rounded-2xl         
+      right-56            
+      z-10                             
+      scale-150           
+      translate-x-1/4     
+      translate-y-1/4     
+    " style={{
+      padding:"4px",
+      height:"26px",
+        width: "auto",
+        backdropFilter: "blur(48px)",
+        WebkitBackdropFilter: "blur(48px)",
+        background: "rgba(60, 75, 50, 0.35)",
+        border: "0.5px solid rgba(255, 255, 255, 0.28)",
+           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+      }} >  waste composting</div>
   
 
     <ul className="list-disc list-inside text-sm font-semibold">
