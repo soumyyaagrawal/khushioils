@@ -181,7 +181,7 @@ export default function Whyus() {
 
        </div>
 
-        <div className=" relative w-318 h-44 p-8 ml-32 mt-2 bg-[#1D5B37] bg-cover bg-[position:bottom_4px_center] bg-blur-[1px] 
+        <div className=" relative w-318 h-44 p-8 ml-51 mt-2 bg-[#1D5B37] bg-cover bg-[position:bottom_4px_center] bg-blur-[1px] 
  rounded-4xl shadow-sm text-white hover:shadow-2xl transition-shadow duration-300">
         <span className="text-4xl font-bold mt-2">
      <span  className="font-semibold">Zero Wastage</span> 
