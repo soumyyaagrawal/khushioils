@@ -1,5 +1,6 @@
 import CountUp from "@/components/CountUp.jsx";
 import GlassDiv from "@/components/glassdiv";
+import InfiniteScroll from "@/components/infinitescroll";
 
 export default function Whyus() {
   return (
@@ -195,9 +196,9 @@ export default function Whyus() {
 <div
     className=" flex items-center justify-center m-x-2
       absolute            
-      bottom- -1   
+      bottom-8   
       text-white rounded-2xl         
-      right-14            
+      right-17            
       z-10                             
       scale-150           
       translate-x-1/4     
@@ -217,9 +218,9 @@ export default function Whyus() {
       <div
     className=" flex items-center justify-center
       absolute            
-      bottom- -1   
+      bottom-8
       text-white rounded-2xl         
-      right-56            
+      right-59            
       z-10                             
       scale-150           
       translate-x-1/4     
@@ -238,9 +239,32 @@ export default function Whyus() {
       <div
     className=" flex items-center justify-center
       absolute            
-      bottom-24  
+      bottom-20 
       text-white rounded-2xl         
-      right-56            
+      right-36           
+      z-10                             
+      scale-150           
+      translate-x-1/4     
+      translate-y-1/4 
+      shadow-sm    
+    " style={{
+      padding:"4px",
+      height:"26px",
+        width: "auto",
+        backdropFilter: "blur(88px)",
+        WebkitBackdropFilter: "blur(48px)",
+        background: "rgba(60, 75, 50, 0.35)",
+        border: "0.5px solid rgba(255, 255, 255, 0.28)",
+           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+      }} >  waste composting</div>
+
+
+      <div
+    className=" flex items-center justify-center m-x-2
+      absolute            
+      bottom-20   
+      text-white rounded-2xl         
+      right-8             
       z-10                             
       scale-150           
       translate-x-1/4     
@@ -254,8 +278,31 @@ export default function Whyus() {
         background: "rgba(60, 75, 50, 0.35)",
         border: "0.5px solid rgba(255, 255, 255, 0.28)",
            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} >  waste composting</div>
+      }} >  EV</div>
   
+<div
+    className=" flex items-center justify-center
+      absolute            
+      bottom-32 
+      text-white rounded-2xl         
+      right-20            
+      z-10                             
+      scale-150           
+      translate-x-1/4     
+      translate-y-1/4     
+    " style={{
+      padding:"4px",
+      height:"26px",
+        width: "auto",
+        backdropFilter: "blur(48px)",
+        WebkitBackdropFilter: "blur(48px)",
+        background: "rgba(60, 75, 50, 0.35)",
+        border: "0.5px solid rgba(255, 255, 255, 0.28)",
+           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+      }} > Smart Energy</div>
+
+
+
 
     <ul className="list-disc list-inside text-sm font-semibold">
         <li>Eco-Friendly.</li>
@@ -266,9 +313,8 @@ export default function Whyus() {
     
 
 </div>
-
-        
-    
+<br/>
+          
     
   </div> )};
 
