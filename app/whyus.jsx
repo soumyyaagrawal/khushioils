@@ -1,12 +1,14 @@
 import CountUp from "@/components/CountUp.jsx";
 import GlassDiv from "@/components/glassdiv";
-import InfiniteScroll from "@/components/infinitescroll";
+import WaveDivider from "@/components/wavedivider.jsx";
 
 export default function Whyus() {
   return (
-    <div className="w-full h-[100vh] bg-white mt-8">   
+<div>
+    <WaveDivider />
+    <section id="green" className="page green w-full h-[100vh] bg-gradient-to-br from-green-800 to-green-100 relative">
 
-<h1 className="font-semibold text-6xl ml-16">What Sets Us Apart 
+<h1 className="font-semibold text-6xl p-8 ml-126 text-white ">What Sets Us Apart 
    {/* <div className="w-28 h-[3px] my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div> */}
 </h1>
 
@@ -192,27 +194,7 @@ export default function Whyus() {
     <br />
 {/* e4bf6e */}
      
-   
-<div
-    className=" flex items-center justify-center m-x-2
-      absolute            
-      bottom-8   
-      text-white rounded-2xl         
-      right-17            
-      z-10                             
-      scale-150           
-      translate-x-1/4     
-      translate-y-1/4     
-    " style={{
-      padding:"4px",
-      height:"26px",
-        width: "auto",
-        backdropFilter: "blur(48px)",
-        WebkitBackdropFilter: "blur(48px)",
-        background: "rgba(60, 75, 50, 0.35)",
-        border: "0.5px solid rgba(255, 255, 255, 0.28)",
-           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} >  Solar Panels</div>
+<GlassDiv bottom="8" right="17" children= "Solar Panels" />
 
 
       <div
@@ -316,6 +298,9 @@ export default function Whyus() {
 <br/>
           
     
-  </div> )};
+ </section>
+ </div>
+  );
+}
 
 
