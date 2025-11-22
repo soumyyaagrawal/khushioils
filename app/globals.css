@@ -143,34 +143,6 @@ body {
   overflow: visible; /* ensure pseudo-element is not clipped */
 }
 
-/* make page children sit above the pseudo-element so content remains readable */
-.page > * {
-  position: relative;
-  z-index: 10;
-}
-
-/* Fade overlay when scrolling from white -> green.
-   It sits behind content but above the previous section visually. */
-#green::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -18vh;        /* how far fade overlaps into previous section */
-  height: 18vh;      /* fade thickness */
-  pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  mix-blend-mode: normal;
-  opacity: 1;
-  transition: opacity 600ms ease;
-  z-index: 5;        /* sits under content but above the previous section */
-}
-
-/* Optional: ensure body has white background so the fade starts from white */
 body {
   background: #ffffff;
 }
@@ -179,4 +151,3 @@ body {
   position: relative;
   z-index: 10;
 }
-

@@ -15,26 +15,25 @@ export default function WaveDivider() {
   }, []);
 
   return (
-   <div className="divider w-full overflow-hidden">
+   <div className="w-full overflow-hidden">
   <svg
     viewBox="0 0 1200 120"
     preserveAspectRatio="none"
     className="w-full h-[120px]"
   >
     <defs>
-      <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stopColor="#0B6E3B" /> 
-        {/* <stop offset="0%" stopColor="#0e8548ff" />  */}
-        <stop offset="100%" stopColor="#79b68aff" /> 
+      <linearGradient id="waveGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#166534" />  
+        <stop offset="100%" stop-color="#DCFCE7" /> 
       </linearGradient>
     </defs>
 
     <path
-      id="divider-path"
       d="M0,0 C300,80 900,80 1200,0 L1200,120 L0,120 Z"
       fill="url(#waveGradient)"
     />
   </svg>
 </div>
+
   );
 }

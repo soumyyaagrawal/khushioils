@@ -7,6 +7,7 @@ export default function Whyus() {
 <div>
     <WaveDivider />
     <section id="green" className="page green w-full h-[100vh] bg-gradient-to-br from-green-800 to-green-100 relative">
+        
 
 <h1 className="font-semibold text-6xl p-8 ml-126 text-white ">What Sets Us Apart 
    {/* <div className="w-28 h-[3px] my-6 rounded-full bg-gradient-to-r from-green-200 to-green-800 z-10" ></div> */}
