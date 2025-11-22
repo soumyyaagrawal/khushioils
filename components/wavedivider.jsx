@@ -23,8 +23,8 @@ export default function WaveDivider() {
   >
     <defs>
       <linearGradient id="waveGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#166534" />  
-        <stop offset="100%" stop-color="#DCFCE7" /> 
+        <stop offset="0%" stopColor="#166534" />  
+        <stop offset="100%" stopColor="#DCFCE7" /> 
       </linearGradient>
     </defs>
 

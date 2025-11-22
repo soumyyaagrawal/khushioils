@@ -195,94 +195,27 @@ export default function Whyus() {
     <br />
 {/* e4bf6e */}
      
-<GlassDiv bottom="8" right="17" children= "Solar Panels" />
+<GlassDiv bottom="bottom-8" right="right-17">
+  Solar Panel
+</GlassDiv>
+
+      <GlassDiv bottom="bottom-8" right="right-57">
+  Biofuel Burner
+</GlassDiv>
+
+    <GlassDiv bottom=" bottom-20" right="right-38">
+  Waste Composting
+</GlassDiv>
+
+     <GlassDiv bottom=" bottom-20" right="right-9">
+  EV
+</GlassDiv>
 
 
-      <div
-    className=" flex items-center justify-center
-      absolute            
-      bottom-8
-      text-white rounded-2xl         
-      right-59            
-      z-10                             
-      scale-150           
-      translate-x-1/4     
-      translate-y-1/4     
-    " style={{
-      padding:"4px",
-      height:"26px",
-        width: "auto",
-        backdropFilter: "blur(48px)",
-        WebkitBackdropFilter: "blur(48px)",
-        background: "rgba(60, 75, 50, 0.35)",
-        border: "0.5px solid rgba(255, 255, 255, 0.28)",
-           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} >  Biofuel Burner</div>
-
-      <div
-    className=" flex items-center justify-center
-      absolute            
-      bottom-20 
-      text-white rounded-2xl         
-      right-36           
-      z-10                             
-      scale-150           
-      translate-x-1/4     
-      translate-y-1/4 
-      shadow-sm    
-    " style={{
-      padding:"4px",
-      height:"26px",
-        width: "auto",
-        backdropFilter: "blur(88px)",
-        WebkitBackdropFilter: "blur(48px)",
-        background: "rgba(60, 75, 50, 0.35)",
-        border: "0.5px solid rgba(255, 255, 255, 0.28)",
-           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} >  waste composting</div>
-
-
-      <div
-    className=" flex items-center justify-center m-x-2
-      absolute            
-      bottom-20   
-      text-white rounded-2xl         
-      right-8             
-      z-10                             
-      scale-150           
-      translate-x-1/4     
-      translate-y-1/4     
-    " style={{
-      padding:"4px",
-      height:"26px",
-        width: "auto",
-        backdropFilter: "blur(48px)",
-        WebkitBackdropFilter: "blur(48px)",
-        background: "rgba(60, 75, 50, 0.35)",
-        border: "0.5px solid rgba(255, 255, 255, 0.28)",
-           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} >  EV</div>
   
-<div
-    className=" flex items-center justify-center
-      absolute            
-      bottom-32 
-      text-white rounded-2xl         
-      right-20            
-      z-10                             
-      scale-150           
-      translate-x-1/4     
-      translate-y-1/4     
-    " style={{
-      padding:"4px",
-      height:"26px",
-        width: "auto",
-        backdropFilter: "blur(48px)",
-        WebkitBackdropFilter: "blur(48px)",
-        background: "rgba(60, 75, 50, 0.35)",
-        border: "0.5px solid rgba(255, 255, 255, 0.28)",
-           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
-      }} > Smart Energy</div>
+<GlassDiv bottom=" bottom-32" right="right-20">
+  Smart Energy
+</GlassDiv>
 
 
 

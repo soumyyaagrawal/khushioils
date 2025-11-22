@@ -1,9 +1,13 @@
 "use client";
 
-export default function GlassDiv({ children, bottom, right}) {
+export default function GlassDiv({
+  children,
+  bottom = "bottom-32",
+  right = "right-20",
+}) {
   return (
     <div
-      className="
+      className={`
         flex items-center justify-center
         absolute
         text-white rounded-2xl
@@ -12,7 +16,7 @@ export default function GlassDiv({ children, bottom, right}) {
         translate-x-1/4
         translate-y-1/4
         ${bottom} ${right}
-      "
+      `}
       style={{
         padding: "4px",
         height: "26px",
