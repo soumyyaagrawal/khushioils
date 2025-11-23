@@ -1,5 +1,4 @@
 import InfiniteScroll from "@/components/infinitescroll";
-import ShowcaseWrapper from "@/components/cardshowcase";
     export default function Intro() {
   return (
     // 1. Main padding and background

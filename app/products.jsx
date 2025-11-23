@@ -74,13 +74,6 @@ export default function Products() {
             ))}
           </motion.div>
 
-
-
-            
-
-
-
-
         </div>
       </div>
     </section>

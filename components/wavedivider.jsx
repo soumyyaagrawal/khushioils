@@ -7,8 +7,8 @@ export default function WaveDivider() {
   useEffect(() => {
     gsap.to("#divider-path", {
       attr: { d: "M0,20 C300,100 900,40 1200,20 L1200,120 L0,120 Z" },
-      duration: 3,
-      repeat: -1,
+      duration: 9,
+      repeat: 5,
       yoyo: true,
       ease: "easeInOut"
     });

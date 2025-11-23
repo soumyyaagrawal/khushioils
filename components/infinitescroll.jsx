@@ -64,7 +64,7 @@ const InfiniteScroll = ({ isReversed = false, className }) => {
     if (!timeline.current) return;
     timelineTimeScaleTween.current?.kill();
     timelineTimeScaleTween.current = gsap.to(timeline.current, {
-      timeScale: 1,
+      timeScale: 0.75 ,
       duration: 0.2,
     });
   };
@@ -99,7 +99,7 @@ const InfiniteScroll = ({ isReversed = false, className }) => {
   return (
     <div
       className={twMerge(
-        "relative w-full overflow-hidden h-[80px] select-none z-40 py-2 sm:py-4 px-6 sm:px-8", // ✅ padding added here
+        "relative w-full overflow-hidden h-[90px] select-none z-20 py-2 sm:py-4 px-6 sm:px-8", // ✅ padding added here
         className
       )}
       onPointerEnter={onPointerEnter}
@@ -118,7 +118,7 @@ const InfiniteScroll = ({ isReversed = false, className }) => {
     >
       <div
         ref={movingContainer}
-        className="flex w-fit items-center gap-8 sm:gap-14 px-6 sm:px-10"
+        className="flex w-fit items-center gap-4 sm:gap-14 px-8 sm:px-10"
         style={{
           height: ["40px", "80px"], // Adjust height for different screen sizes
         }}

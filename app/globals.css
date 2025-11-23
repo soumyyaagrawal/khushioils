@@ -145,9 +145,16 @@ body {
 
 body {
   background: #ffffff;
+  overflow-x: hidden;
 }
 
 .divider {
   position: relative;
   z-index: 10;
+}
+
+/* Enable clipPath animations */
+* {
+  clip-path: inherit;
+  -webkit-clip-path: inherit;
 }
