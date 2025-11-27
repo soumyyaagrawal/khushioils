@@ -128,7 +128,7 @@ const [selectedCard, setSelectedCard] = useState(null);
 
 
 
-      <div className="flex flex-row overflow-x-auto space-x-6 py-8 px-4 md:px-8 lg:px-16">
+      <div className="flex flex-row space-x-6 justify-center items-center py-8 px-4 md:px-8 lg:px-16">
 
  <TestimonialCard
         stars={5}

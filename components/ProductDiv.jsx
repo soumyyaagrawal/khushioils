@@ -16,7 +16,7 @@ const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = fals
             </div>
           )}
         </div>
-        <div className={`pt-2 text-6xl text-gray-900 font-semibold font-['Montserrat'] transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
+        <div className={`pt-2 text-6xl text-gray-900 font-semibold transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
           {eventDate}
         </div>
       </div>
@@ -27,7 +27,7 @@ const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = fals
           alt={`${eventName} event`}
           loading="lazy"
         />
-        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal font-['Montserrat'] w-[40%]">
+        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[40%]">
           {description}
         </div>
       </div>
