@@ -130,9 +130,30 @@ const [selectedCard, setSelectedCard] = useState(null);
 
       <div className="flex flex-row overflow-x-auto space-x-6 py-8 px-4 md:px-8 lg:px-16">
 
-<TestimonialCard />
-<TestimonialCard />
-<TestimonialCard />
+ <TestimonialCard
+        stars={5}
+        text="WorkNook makes finding a coworking space so easy! I can book a desk in minutes and get straight to work. Highly recommend!"
+        name="Anjani Patel"
+        location="Bhilai"
+        image="/jao.png"
+      />
+
+      <TestimonialCard
+        stars={5}
+        text="Very friendly staff and quick booking. Loved the ambiance!"
+        name="Rahul Sharma"
+        location="Mumbai"
+        image="/jao.png"
+      />
+
+      <TestimonialCard
+        stars={5}
+        text="Very friendly staff and quick booking. Loved the ambiance!"
+        name="Rahul Sharma"
+        location="Mumbai"
+        image="/jao.png"
+      />
+      
       
 </div>
 
