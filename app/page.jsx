@@ -6,7 +6,6 @@ import Navbar from '@/components/navbar';
 import Whyus from "./whyus.jsx";
 import HorizontalScrolling from "@/components/HorizontalScrolling.jsx";
 import Testimonials from "./testimonials.jsx";
-import TestWave from "./test.jsx";
 
 export default function Page() {
   return (
@@ -17,7 +16,6 @@ export default function Page() {
       <HorizontalScrolling />
       <Products />
       <Whyus />
-      {/* <TestWave /> */}
       <Testimonials />
     </div>
   );

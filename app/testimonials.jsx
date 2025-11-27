@@ -1,6 +1,9 @@
 'use client';
+import GlassDiv from "@/components/glassdiv";
 import { Oxanium, Montserrat } from "next/font/google";
 import { useState } from "react";
+import TestimonialCard from "@/components/testimonialcard";
+
 
 
 const oxanium = Oxanium({
@@ -70,21 +73,21 @@ const [selectedCard, setSelectedCard] = useState(null);
 
 
   return (
-    <div className={`${montserrat.className} flex flex-col w-full bg-white antialiased`}>
+    <div className={`flex flex-col w-full bg-white antialiased`}>
       {/* SECTION 1: The Image Grid */}
       <section className="w-full block">
         <div className="w-full py-[40px] px-[20px] flex justify-center">
           <div className="grid grid-flow-col grid-cols-9 auto-rows-[60.188px] auto-cols-[120.102px] gap-[20px] mx-auto max-w-[1560px] w-full relative">
             {/* Top row "shadow-only" decorations */}
-            <div className="col-start-1 col-span-1 row-start-1 row-span-2 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-2 col-span-1 row-start-1 row-span-1 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-3 col-span-1 row-start-1 row-span-2 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-4 col-span-1 row-start-1 row-span-1 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-5 col-span-1 row-start-1 row-span-2 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-6 col-span-1 row-start-1 row-span-1 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-7 col-span-1 row-start-1 row-span-2 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-8 col-span-1 row-start-1 row-span-1 bg-white rounded-[20px] w-full h-full"></div>
-            <div className="col-start-9 col-span-1 row-start-1 row-span-2 bg-white rounded-[20px] w-full h-full"></div>
+            <div className="col-start-1 col-span-1 row-start-1 row-span-2 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-2 col-span-1 row-start-1 row-span-1 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-3 col-span-1 row-start-1 row-span-2 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-4 col-span-1 row-start-1 row-span-1 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-5 col-span-1 row-start-1 row-span-2 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-6 col-span-1 row-start-1 row-span-1 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-7 col-span-1 row-start-1 row-span-2 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-8 col-span-1 row-start-1 row-span-1 bg-gray-100 rounded-[20px] w-full h-full"></div>
+            <div className="col-start-9 col-span-1 row-start-1 row-span-2 bg-gray-100 rounded-[20px] w-full h-full"></div>
 
             {/* Achievement cards */}
             <AchievementCard imageUrl={achievementsData[0].imageUrl} gridClass="col-start-1 col-span-1 row-start-3 row-span-3" />
@@ -106,92 +109,43 @@ const [selectedCard, setSelectedCard] = useState(null);
 
             {/* Central text block */}
             <div className="col-start-4 col-span-3 row-start-6 row-span-2 text-white text-center flex flex-col justify-center items-center z-[10] pointer-events-none">
+            
               <h1 className={` m-0 leading-[1.2] text-[3.2rem] text-black font-bold whitespace-nowrap`}>Loved by Families across India</h1>
               <p className={`text-[1.2rem] opacity-80 max-w-[300px] mt-[15px] whitespace-nowrap font-extrabold text-gray-800`}>
                 Stories of Trust & Experience.
               </p>
+             
+
+
+
             </div>
           </div>
+
         </div>
+                     
+
       </section>
 
-      {/* SECTION 2: Placements & Offers */}
-      <section className="w-full pt-[50px] pb-[100px] ">
-        <div className="max-w-[1400px] mx-auto px-[20px] ">
-        
-        </div>
-      </section>
-
-      {/* Hackathons & Internships (same layout) */}
-      <section className="w-full pt-[50px] pb-[100px]">
-        <div className="max-w-[1400px] mx-auto px-[20px]">
-         
-        </div>
-      </section>  
 
 
+      <div className="flex flex-row overflow-x-auto space-x-6 py-8 px-4 md:px-8 lg:px-16">
 
-
-
-
-{selectedCard && (
-  <div className="fixed inset-0 z-50 flex justify-center items-center backdrop-black/60 bg-black/80">
-  <div   className="relative w-[620px] h-[250px]  rounded-4xl overflow-hidden p-3 flex gap-4 text-white
-  border border-white/22 bg-gradient-to-br from-white/10 to-white/10
- backdrop-blur-md shadow-xl 
-  bg-[linear-gradient(18deg,rgba(14,14,14,0.6),rgba(5,16,15,0.6),rgba(25,66,66,0.6))]"
- > 
-  
-  {/* Left Image */}
-  <div className="w-56 h-56 rounded-2xl overflow-hidden flex-shrink-0">
-    <img
-      src={selectedCard.imageUrl}
-      alt={selectedCard.name}
-      className="w-full h-full object-cover"
-    />
-  </div>
-
-  {/* Right Content */}
-  <div className="flex flex-col flex-1">
-    <h3 className="text-xl font-semibold mb-2">{selectedCard.name}</h3>
-    <ul className="list-disc pl-5 mb-4 space-y-1 text-[1rem] text-white">
-      <li>100x Engineers Buildathon: Qualified for Semi Finals</li>
-      <li>Hack for BioHeritage: Winner</li>
-    </ul>
-
-    <div className="flex justify-between items-center mt-auto border-t border-white/10 pt-3">
-      <div className="flex items-center gap-3">
-        <img src="/mdi_github.svg" alt="GitHub" className="w-7 h-7" />
-        <LinkedinIcon />
-        <InstagramIcon />
-      </div>
-      <span className="bg-white/10 border-1 border-white/10 px-3 py-1 rounded-full text-sm whitespace-nowrap">
-        {selectedCard.company}
-      </span>
-    </div>
-  </div>
-
-  {/* Close button */}
-  <button
-    onClick={() => setSelectedCard(null)}
-    className="absolute top-4 right-4 text-white text-2xl hover:opacity-80"
-  >
-    ✕
-  </button>
+<TestimonialCard />
+<TestimonialCard />
+<TestimonialCard />
+      
 </div>
 
-  </div>
+
+
+
+
+
+
+
+</div>
 )}
 
 
 
-
-
-
-      <br />
-            <br />
-
-    </div>
-  );
-}
 
