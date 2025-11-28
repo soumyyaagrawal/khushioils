@@ -4,8 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
-import AnimatedWave from "./AnimatedWaves";
-
+import AnimatedWave from "@/components/AnimatedWave";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -15,6 +14,8 @@ export default function HorizontalScrolling() {
   const eventsContainerRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
 
   const eventsData = [
     {
@@ -95,6 +96,8 @@ export default function HorizontalScrolling() {
             const progress = self.progress;
             const currentIndex = Math.round(progress * (numberOfEvents - 1));
             setActiveIndex(currentIndex);
+              setScrollProgress(progress);  // ⬅ add this
+
           },
         },
       });
@@ -107,7 +110,9 @@ export default function HorizontalScrolling() {
         ref={eventsSectionRef}
         className="bg-[#FFF2CE] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[15vh]"
       >
-        <h1 className="text-6xl font-black z-10 p-8 font-semibold mt-16 ml-120">
+
+{/* <AnimatedWave scrollProgress={scrollProgress} />           */}
+<h1 className="text-6xl font-black z-10 p-8 font-semibold mt-16 ml-120">
             Featured Products
           </h1>
 

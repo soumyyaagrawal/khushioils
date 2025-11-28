@@ -3,7 +3,6 @@ import InfiniteScroll from "@/components/infinitescroll";
   return (
     // 1. Main padding and background
      <>
-         <InfiniteScroll />
 
     <div className="py-20 bg-white"> 
 
