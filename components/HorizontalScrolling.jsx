@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
+import AnimatedWave from "./AnimatedWaves";
 
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -28,14 +29,14 @@ export default function HorizontalScrolling() {
       eventDate: "Sunflower Oil",
       imageUrl: "/Frame73.svg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
     },
     {
       eventName: "Anandam",
       eventDate: "Rice Bran Oil",
       imageUrl: "/Frame73.svg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
     },
     // {
     //   eventName: "OIL",
@@ -106,9 +107,9 @@ export default function HorizontalScrolling() {
         ref={eventsSectionRef}
         className="bg-[#FFF2CE] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[15vh]"
       >
-        <h2 className="pb-20 text-center justify-start text-5xl font-bold text-gray-900 ">
-          Featured Products
-        </h2>
+        <h1 className="text-6xl font-black z-10 p-8 font-semibold mt-16 ml-120">
+            Featured Products
+          </h1>
 
         <div
           ref={eventsContainerRef}
@@ -127,6 +128,7 @@ export default function HorizontalScrolling() {
           ))}
         </div>
       </section>
+     
     </div>
   );
 }
