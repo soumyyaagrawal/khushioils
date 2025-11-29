@@ -1,6 +1,8 @@
 "use client";
 import Navbar from "@/components/navbar";
 import ProgressBar from "@/components/ProgressBar"; 
+import ValuesSection from "@/components/valuessection";
+import Availability from "@/components/Availability";
 
 export default function Aboutus() {
   return (
@@ -89,20 +91,17 @@ To become a trusted household name for premium edible oils, embodying health, qu
   </div>
 </div>
 
-<div className="p-10">
-      {/* <h1>Framer Progress Bar</h1> */}
+<div>
       <ProgressBar />
     </div>
 
+<ValuesSection />
+<Availability />  
 
 
 
 
 
-Distinctio nihil vitae expedita velit. Qui asperiores deserunt quam sint quisquam perferendis sit aliquam, quae laborum voluptatibus reprehenderit eum doloribus unde magni, expedita corrupti. Possimus quibusdam aperiam ipsa odio adipisci?
-Facere nobis vitae aliquam iure quia nostrum qui debitis neque magni rem harum, reiciendis accusamus eos commodi quae, facilis hic nesciunt illum, voluptate dolores dignissimos dicta odio? Doloribus, explicabo voluptates?
-Officiis a repellendus error nostrum est magnam quasi saepe quis ducimus quos praesentium molestiae illo, quo corporis veniam, quia, sapiente minima consectetur necessitatibus. Illum deleniti, magni temporibus 
- 
 
 
 
