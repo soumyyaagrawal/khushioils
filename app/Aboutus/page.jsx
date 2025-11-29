@@ -1,5 +1,7 @@
 "use client";
 import Navbar from "@/components/navbar";
+import ProgressBar from "@/components/ProgressBar"; 
+
 export default function Aboutus() {
   return (
     <div className="min-h-screen bg-white">
@@ -13,7 +15,7 @@ export default function Aboutus() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-5xl font-bold tracking-wide">
+          <h1 className="text-white text-6xl font-bold tracking-wide">
             About Us
           </h1>
         </div>
@@ -65,8 +67,8 @@ To become a trusted household name for premium edible oils, embodying health, qu
     </div>
 
     {/* RIGHT SIDE – STATS */}
-    <div className="grid grid-cols-2 gap-y-10 text-center">
-      <div>
+    <div className="grid grid-cols-2 gap-y-10 text-center z-2">
+      <div className="z-2">
         <h3 className="text-4xl font-extrabold">45+</h3>
         <p className="text-gray-600 text-sm mt-2">Years of Excellence</p>
       </div>
@@ -87,7 +89,20 @@ To become a trusted household name for premium edible oils, embodying health, qu
   </div>
 </div>
 
+<div className="p-10">
+      {/* <h1>Framer Progress Bar</h1> */}
+      <ProgressBar />
+    </div>
 
+
+
+
+
+
+Distinctio nihil vitae expedita velit. Qui asperiores deserunt quam sint quisquam perferendis sit aliquam, quae laborum voluptatibus reprehenderit eum doloribus unde magni, expedita corrupti. Possimus quibusdam aperiam ipsa odio adipisci?
+Facere nobis vitae aliquam iure quia nostrum qui debitis neque magni rem harum, reiciendis accusamus eos commodi quae, facilis hic nesciunt illum, voluptate dolores dignissimos dicta odio? Doloribus, explicabo voluptates?
+Officiis a repellendus error nostrum est magnam quasi saepe quis ducimus quos praesentium molestiae illo, quo corporis veniam, quia, sapiente minima consectetur necessitatibus. Illum deleniti, magni temporibus 
+ 
 
 
 
