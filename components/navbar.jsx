@@ -35,7 +35,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/Aboutus" }, // your intro.jsx page
-    { name: "Products", href: "/products" },
+    { name: "Products", href: "/Products" },
     { name: "Process", href: "/process" },
   ];
 

@@ -133,7 +133,7 @@
     max-height: 0px;
     position: sticky;
     top: 52vh;
-    box-shadow: 0 0 18px 8px rgba(249, 247, 247, 0.66);
+    /* box-shadow: 0 0 18px 8px rgba(249, 247, 247, 0.66); */
 }
 
 .timeline-arrow img {

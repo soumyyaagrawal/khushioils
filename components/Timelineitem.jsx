@@ -12,7 +12,7 @@ return (
 
         <div className="timeline-center">
             <div className="timeline-arrow">
-                <img src="/button.svg" alt="" />
+                <img src="/report.png" alt="" />
             </div>
         </div>
 

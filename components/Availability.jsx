@@ -2,10 +2,10 @@
 import Image from "next/image";
 
 const states = [
-  { name: "Chhattisgarh", img: "/states/cg.svg" },
-  { name: "Madhya Pradesh", img: "/states/mp.svg" },
-  { name: "Odisha", img: "/states/odisha.svg" },
-  { name: "Maharashtra", img: "/states/maha.svg" }
+  { name: "Chhattisgarh", img:"/chhattisgarh.png" },
+  { name: "Madhya Pradesh", img:"/mp.png" },
+  { name: "Odisha", img: "/odisha.png" },
+  { name: "Maharashtra", img:"/maha.png" }
 ];
 
 export default function Availability() {
@@ -17,7 +17,7 @@ export default function Availability() {
       </p>
 
       {/* Horizontal Cards */}
-      <div className="overflow-x-auto snap-x snap-mandatory flex gap-6 px-10 py-14">
+<div className="overflow-x-auto snap-x snap-mandatory flex justify-center gap-6 px-10 py-14">
         {states.map((state, i) => (
           <div
             key={i}
@@ -35,9 +35,9 @@ export default function Availability() {
       {/* Ecommerce Links */}
       <div className="text-center mt-10">
         <p className="text-gray-600 text-lg">Also available on</p>
-        <div className="flex justify-center gap-6 mt-4">
-          <Image src="/amazon.png" width={120} height={40} alt="Amazon" />
-          <Image src="/flipkart.png" width={120} height={40} alt="Flipkart" />
+        <div className="flex justify-center gap-20 mt-4">
+          <Image src="/amazon.png" width={280} height={30} alt="Amazon" /> 
+          <Image src="/flipkart.png" width={120} height={30} alt="Flipkart" />
         </div>
       </div>
     </section>
