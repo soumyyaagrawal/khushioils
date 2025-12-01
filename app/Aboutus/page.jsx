@@ -14,7 +14,7 @@ export default function Aboutus() {
       {/* ------- TOP BANNER IMAGE ------- */}
       <div className="w-full h-[40vh] relative overflow-hidden">
         <img
-          src="/Aboutus.jpg"   // change image here
+          src="/AboutusPage/Aboutus.jpg"   // change image here
           alt="About Us Banner"
           className="w-full h-full object-cover"
         />
@@ -31,7 +31,7 @@ export default function Aboutus() {
         {/* LEFT: IMAGE */}
         <div className="flex justify-center">
           <img
-            src="/Aboutus1.jpg"  // change image here
+            src="/AboutusPage/Aboutus1.jpg"  // change image here
             alt="Our Team"
             className="rounded-xl shadow-lg w-[90%] h-auto"
           />

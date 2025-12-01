@@ -3,6 +3,7 @@
 import Navbar from "@/components/navbar";
 import FlagshipCard from "@/components/flagshipcard";
 import Footer from "@/components/footer";
+import OtherProducts from "@/components/Otherproducts";
 import ChooseUs from "@/components/chooseus";
 
 
@@ -68,5 +69,7 @@ Made with 100% refined sunflower oil and antioxidants for health, strong bones, 
 
 </div>
 <ChooseUs />
+<OtherProducts />
+<Footer />
 
       </div>)}

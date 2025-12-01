@@ -3,11 +3,11 @@
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
-  { title: "Furnaces", img: "/services/furnace.jpg", iconBg: "bg-yellow-400" },
-  { title: "Central Air Conditioning", img: "/services/air.jpg", iconBg: "bg-red-900" },
-  { title: "Tankless Water Heater", img: "/services/water.jpg", iconBg: "bg-red-900" },
-  { title: "Underfloor Heating System", img: "/services/floor.jpg", iconBg: "bg-red-900" },
-  { title: "New House Plumbing", img: "/services/plumbing.jpg", iconBg: "bg-red-900" },
+  { title: "Good Oxidative Stability",text:"text-white" , icon: "/Chooseus/goodoxa.png", iconBg: "bg-[#1D5B37]" },
+  { title: "Anti Ageing",text:"text-green-900" , icon: "/Chooseus/antiageing.png", iconBg: "bg-[#D0F348]" },
+  { title: "Tasty Food",text:"text-white" , icon: "/Chooseus/goodfood.png", iconBg: "bg-[#1D5B37]" },
+  { title: "Good Cholesterol", text:"text-green-900" ,icon: "/Chooseus/hdl.png", iconBg: "bg-[#D0F348]" },
+  { title: "Good Phytosterols", text:"text-white" , icon: "/Chooseus/phy.png", iconBg: "bg-[#1D5B37]" },
 ];
 
 export default function ChooseUs() {
@@ -16,23 +16,22 @@ export default function ChooseUs() {
       {/* TOP SECTION */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
         <div>
-          <p className="text-sm uppercase tracking-wider text-gray-500">
-            / Services We Offer
-          </p>
+                <p className="text-md uppercase tracking-wider font-semibold text-gray-900">
+                    Why Switch to 
+                </p>
           <h2 className="text-5xl font-bold leading-tight text-gray-900">
-            Certified <br /> Excellence
+            Khushi Gold
           </h2>
         </div>
 
         <div className="mt-6 md:mt-0 max-w-sm text-right">
-          <p className="text-gray-600 text-sm mb-3">
-            From repairs and installations to preventative maintenance, we’ve got you
-            covered. Choose reliability, choose Razor.
+          <p className="text-gray-600 text-lg font-semibold mb-3">
+            Experience the Khushi Gold difference: purity, health, and taste in every drop.
           </p>
-          <div className="flex justify-end gap-6 text-red-700 font-medium cursor-pointer">
+          {/* <div className="flex justify-end gap-6 text-red-700 font-medium cursor-pointer">
             <p className="hover:underline">View All Services →</p>
             <p className="hover:underline">Call For Booking →</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -41,22 +40,20 @@ export default function ChooseUs() {
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="relative group h-72 rounded-xl overflow-hidden bg-cover bg-center shadow-md"
-            style={{ backgroundImage: `url(${service.img})` }}
+            className={`relative group h-20 rounded-xl overflow-hidden bg-cover bg-center shadow-md  ${service.iconBg} `}
+            
           >
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
-
+            
             {/* Title */}
-            <h3 className="absolute bottom-6 left-6 text-white text-lg font-medium z-10">
+            <h3 className={`absolute bottom-6 left-6 ${service.text} text-lg font-extrabold z-10`}>
               {service.title}
             </h3>
 
             {/* ICON BG CURVE */}
             <div
-              className={`absolute bottom-0 right-0 w-14 h-14 rounded-tl-3xl flex items-center justify-center ${service.iconBg}`}
+              className={`absolute bottom-0 right-0 w-14 h-14 rounded-tl-3xl flex items-center justify-center bg-[#fdf9f8]`}
             >
-              <ArrowUpRight className="text-white" size={20} />
+              <img src={service.icon} alt={service.title} className="w-16 mb-3 h-16 object-contain" />
             </div>
           </div>
         ))}

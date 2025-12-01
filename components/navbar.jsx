@@ -67,7 +67,7 @@ export default function Navbar() {
 
         {/* CONTACT BUTTON */}
         <Link
-          href="/contact"
+          href="/Contactus"
           className={`rounded-full border px-6 py-2 text-base font-medium transition duration-200 ${
             isWhiteBg
               ? "border-gray-800 text-gray-900 hover:bg-gray-900 hover:text-white"

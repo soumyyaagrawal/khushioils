@@ -7,14 +7,14 @@ export default function FlagshipCard({
   description,
   features = [],
   imageSrc,
-  bgColor = "#FFF2CE",
+//   bgColor = "#FFF2CE",
   reverse = false, // 🟢 <— NEW PROP
 }) {
   return (
     <div
-      className={`w-[1600] h-[450px] rounded-xl shadow-lg flex items-center p-10 mb-12 gap-10 
+      className={`w-[1600] h-[450px] rounded-xl shadow-lg flex items-center p-10 mb-12 gap-10 bg-amber-100
         ${reverse ? "md:flex-row-reverse" : "md:flex-row"} flex-col`}
-      style={{ backgroundColor: bgColor }}
+      
     >
       {/* IMAGE */}
       <div className="w-full md:w-[40%] flex justify-center">
