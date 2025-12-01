@@ -7,18 +7,18 @@ export default function ProcessSection() {
   const [hovered, setHovered] = useState(null);
 
   const panels = [
-    { id: 1, title: "Seed Selection", text: "We carefully select the finest quality seeds from trusted farmers across India, ensuring only the best raw materials for our oils.", img: "/machine.jpg" },
-    { id: 2, title: "Cold-Pressed", text: "Our state-of-the-art cold-pressing technology preserves natural nutrients, flavor, and aroma without using heat or chemicals.", img: "/your2.jpg" },
-    { id: 3, title: "Quality Testing", text: "Every batch undergoes rigorous laboratory testing to ensure purity, safety, and compliance with international standards.", img: "/your3.jpg" },
-    { id: 4, title: "Natural Filtering", text: "We use natural filtration methods to remove impurities while maintaining the oil's nutritional value and authentic taste.", img: "/your4.jpg" },
-    { id: 5, title: "Hygienic Packaging", text: "Our oils are packaged in food-grade containers in a sterile environment to maintain freshness and extend shelf life.", img: "/your5.jpg" },
-    { id: 6, title: "Quality Assurance", text: "Final quality checks ensure every bottle meets our strict standards before reaching your kitchen with complete traceability.", img: "/your6.jpg" },
+    { id: 1, title: "Seed Selection", text: "We carefully select the finest quality seeds from trusted farmers across India, ensuring only the best raw materials for our oils.", img: "/Process/step1.webp" },
+    { id: 2, title: "Cold-Pressed", text: "Our state-of-the-art cold-pressing technology preserves natural nutrients, flavor, and aroma without using heat or chemicals.", img: "/Process/step2.avif" },
+    { id: 3, title: "Quality Testing", text: "Every batch undergoes rigorous laboratory testing to ensure purity, safety, and compliance with international standards.", img: "/Process/step3.png" },
+    { id: 4, title: "Natural Filtering", text: "We use natural filtration methods to remove impurities while maintaining the oil's nutritional value and authentic taste.", img: "/Process/step4.avif" },
+    { id: 5, title: "Hygienic Packaging", text: "Our oils are packaged in food-grade containers in a sterile environment to maintain freshness and extend shelf life.", img: "/Process/step5.jpg" },
+    
   ];
 
   const expandedIndex = hovered ?? active;
 
   return (
-    <section className="w-full bg-black text-white py-10">
+    <section className="w-full bg-white text-white py-10">
       <div className="flex w-full h-[500px] overflow-hidden rounded-xl">
         {panels.map((p, i) => {
           const isExpanded = expandedIndex === i;
@@ -39,7 +39,8 @@ export default function ProcessSection() {
               <img
                 src={p.img}
                 alt={p.title}
-                className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500 loading=lazy"
+                loading="lazy"
               />
 
               {/* Overlay */}
