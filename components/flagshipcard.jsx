@@ -21,6 +21,7 @@ export default function FlagshipCard({
         <img
           src={imageSrc}
           alt={title}
+          loading="lazy"
           className="rounded-lg drop-shadow-xl w-120 h-120"
         />
       </div>

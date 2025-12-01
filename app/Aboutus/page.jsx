@@ -16,6 +16,7 @@ export default function Aboutus() {
         <img
           src="/AboutusPage/Aboutus.jpg"   // change image here
           alt="About Us Banner"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -33,6 +34,7 @@ export default function Aboutus() {
           <img
             src="/AboutusPage/Aboutus1.jpg"  // change image here
             alt="Our Team"
+            loading="lazy"
             className="rounded-xl shadow-lg w-[90%] h-auto"
           />
         </div>

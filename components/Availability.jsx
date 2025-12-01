@@ -23,7 +23,7 @@ export default function Availability() {
             key={i}
             className="snap-center min-w-[300px] bg-white shadow-md rounded-xl p-6 flex flex-col items-center justify-center"
           >
-            <Image src={state.img} width={100} height={100} alt={state.name} />
+            <Image src={state.img} loading="lazy" width={100} height={100} alt={state.name} />
             <h2 className="text-xl font-semibold mt-4">{state.name}</h2>
             <p className="text-gray-500 mt-2 text-center">
               Available in retail stores & online
@@ -36,10 +36,11 @@ export default function Availability() {
       <div className="text-center mt-10">
         <p className="text-gray-600 text-lg">Also available on</p>
         <div className="flex justify-center gap-20 mt-4">
-          <Image src="/Availibility/amazon.png" width={280} height={30} alt="Amazon" /> 
-          <Image src="/Availibility/flipkart.png" width={120} height={30} alt="Flipkart" />
+          <Image loading="lazy" src="/Availibility/amazon.png" width={280} height={30} alt="Amazon" /> 
+          <Image loading="lazy" src="/Availibility/flipkart.png" width={120} height={30} alt="Flipkart" />
         </div>
       </div>
     </section>
   );
 }
+  
