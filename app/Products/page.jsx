@@ -15,7 +15,7 @@ export default function Products() {
       {/* ------- TOP BANNER IMAGE ------- */}
       <div className="w-full h-[60vh] relative overflow-hidden">
         <img
-          src="/productshero.jpg"   // change image here
+          src="/Products/productshero.jpg"   // change image here
           alt="Products Banner"
           className="w-full h-full object-cover rounded-3xl"
         />

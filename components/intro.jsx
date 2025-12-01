@@ -43,7 +43,7 @@ Enriched with Nature, Trusted by Families            </h2>
           
           {/* Stat 1: 100% */}
           <div>
-            <img src="/olive-oil (1).png" alt="Satisfaction Icon" className="h-20 w-20  mb-4"/>
+            <img src="/intro/olive-oil (1).png" alt="Satisfaction Icon" className="h-20 w-20  mb-4"/>
             <div className="text-xl font-semibold text-gray-900 mb-2">100% Natural Oils</div>
             <p className="text-sm text-gray-600">
               Our oils are extracted from the finest natural sources, ensuring purity and authentic taste in every drop.
@@ -52,7 +52,7 @@ Enriched with Nature, Trusted by Families            </h2>
 
           {/* Stat 2: 20+ */}
           <div>
-            <img src="/leaves.png" alt="leaves Icon" className="h-20 w-20 mb-4"/>
+            <img src="/intro/leaves.png" alt="leaves Icon" className="h-20 w-20 mb-4"/>
             <div className="text-xl font-semibold text-gray-900 mb-2">Cold Processed Oil</div>
             <p className="text-sm text-gray-600">
              Traditional cold-pressed method preserves natural nutrients, vitamins, and the rich flavor of our oils.
@@ -62,7 +62,7 @@ Enriched with Nature, Trusted by Families            </h2>
           
           {/* Stat 3: 160K */}
           <div>
-            <img src="/approved.png" alt="Farmer Icon" className="h-20 w-20 mb-4"/>
+            <img src="/intro/approved.png" alt="Farmer Icon" className="h-20 w-20 mb-4"/>
             <div className="text-xl font-semibold text-gray-900 mb-2">Trusted Since 1985</div>
             <p className="text-sm text-gray-600">
               Four decades of excellence and trust, serving families across India with premium quality cooking oils.

@@ -2,10 +2,10 @@
 import Image from "next/image";
 
 const states = [
-  { name: "Chhattisgarh", img:"/chhattisgarh.png" },
-  { name: "Madhya Pradesh", img:"/mp.png" },
-  { name: "Odisha", img: "/odisha.png" },
-  { name: "Maharashtra", img:"/maha.png" }
+  { name: "Chhattisgarh", img:"/Availibility/chhattisgarh.png" },
+  { name: "Madhya Pradesh", img:"/Availibility/mp.png" },
+  { name: "Odisha", img: "/Availibility/odisha.png" },
+  { name: "Maharashtra", img:"/Availibility/maha.png" }
 ];
 
 export default function Availability() {
@@ -36,8 +36,8 @@ export default function Availability() {
       <div className="text-center mt-10">
         <p className="text-gray-600 text-lg">Also available on</p>
         <div className="flex justify-center gap-20 mt-4">
-          <Image src="/amazon.png" width={280} height={30} alt="Amazon" /> 
-          <Image src="/flipkart.png" width={120} height={30} alt="Flipkart" />
+          <Image src="/Availibility/amazon.png" width={280} height={30} alt="Amazon" /> 
+          <Image src="/Availibility/flipkart.png" width={120} height={30} alt="Flipkart" />
         </div>
       </div>
     </section>

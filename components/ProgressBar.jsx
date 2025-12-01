@@ -13,28 +13,28 @@ const Processsection = () => {
     //   step: ".",
       number: 1978,
       heading: "Established in Excellence",
-      image: "/estabishment.jpg",
+      image: "/ProgressBar/estabishment.jpg",
       description: "Bhagwati Industry begins as a family-run business, founded on principles of purity and quality."
     },
     {
     //   step: ".",
       number: 1987,
       heading: "First Manufacturing Unit",
-      image: "/manufacturing unit.jpg",
+      image: "/ProgressBar/manufacturing unit.jpg",
       description: "Started rice manufacturing & processing in Raipur, marking the beginning of large-scale operations."
     },
     {
     //   step: ".",
       number: "1998",
       heading: "Export Milestone",
-      image: "/export.jpg",
+      image: "/ProgressBar/export.jpg",
       description: "Began international rice exports via containers & bulk, bringing Indian quality to the world."
     },
     {
     //   step: ".",
       number: 2002,
       heading: "Takeover & Expansion",
-      image: "/Expansion.jpg",
+      image: "/ProgressBar/Expansion.jpg",
       description: "Acquired PD Rice Udyog, significantly expanding our production capacity and market reach."
     },
     {
@@ -48,7 +48,7 @@ const Processsection = () => {
     //   step: ".",
       number: 2024,
       heading: "Today – Global Reach",
-      image: "/Global.jpg",
+      image: "/ProgressBar/Global.jpg",
       description: "Set new efficiency standards with Solvent Extraction & Refinery Plants, embracing sustainable innovation and expanding our global footprint with premium quality products."
     }
   ];

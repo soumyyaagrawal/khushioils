@@ -49,7 +49,7 @@ export default function Whyus() {
 
   {/* Drop Image Layer (z-index 0) */}
   <img 
-    src="/drop.png" 
+    src="/Apart/drop.png" 
     alt="A drop of oil" 
     className="
       absolute            
@@ -95,7 +95,7 @@ export default function Whyus() {
 
   {/* Drop Image Layer (z-index 0) */}
   <img 
-    src="/crop.png" 
+    src="/Apart/crop.png" 
     alt="A drop of oil" 
     className="
       absolute            
@@ -137,7 +137,7 @@ export default function Whyus() {
 
     <div className="flex flex-col items-center"> 
 
-       <div className="w-100 h-48 p-8 mt-4 bg-[url('/oildrop.png')] bg-cover bg-[position:left_108px_center] font-semibold rounded-4xl shadow-sm text-black hover:shadow-2xl transition-shadow duration-300">
+       <div className="w-100 h-48 p-8 mt-4 bg-[url('/Apart/oildrop.png')] bg-cover bg-[position:left_108px_center] font-semibold rounded-4xl shadow-sm text-black hover:shadow-2xl transition-shadow duration-300">
         <span className="text-4xl font-bold mt-2">
       <CountUp to={15} />+ 
     </span>

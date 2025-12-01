@@ -12,7 +12,7 @@ return (
 
         <div className="timeline-center">
             <div className="timeline-arrow">
-                <img src="/report.png" alt="" />
+                <img src="/ProgressBar/report.png" alt="" />
             </div>
         </div>
 

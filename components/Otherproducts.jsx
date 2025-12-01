@@ -18,12 +18,12 @@ export default function OtherProducts() {
   };
 
   const images = [
-    "/boiledrice.jpg",
-    "/boiledswarnarice.jpg",
-    "/brokenwhiterice.jpg",
-    "/whiterice.jpg",
-    "/maize.jpg",
-    "/ricebranextract.png",
+    "/OtherProducts/boiledrice.jpg",
+    "/OtherProducts/boiledswarnarice.jpg",
+    "/OtherProducts/brokenwhiterice.jpg",
+    "/OtherProducts/whiterice.jpg",
+    "/OtherProducts/maize.jpg",
+    "/OtherProducts/ricebranextract.png",
   ];
 
   const names = [

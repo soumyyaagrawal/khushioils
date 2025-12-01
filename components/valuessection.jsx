@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { label: "100% Quality Testing", icon: "/test.png" },
-  { label: "Sustainably Produced", icon: "/tea-leaves.png" },
-  { label: "Trusted by Millions", icon: "/trust.png" },
-  { label: "Advanced Manufacturing", icon: "/factory.png" },
+  { label: "100% Quality Testing", icon: "/values/test.png" },
+  { label: "Sustainably Produced", icon: "/values/tea-leaves.png" },
+  { label: "Trusted by Millions", icon: "/values/trust.png" },
+  { label: "Advanced Manufacturing", icon: "/values/factory.png" },
 ];
 
 export default function ValuesSection() {
