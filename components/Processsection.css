@@ -13,12 +13,12 @@
     display: inline;
     /* font-family: Nulshock; */
     font-size: clamp(2rem, 5vw, 5rem);
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 500;
+    line-height: 1.0;
     text-align: center;
     /* text-underline-position: from-font; */
     /* text-decoration-skip-ink: none; */
-    -webkit-text-stroke: 1px #6e6e6e;
+    -webkit-text-stroke: 1px #050505;
     -webkit-text-fill-color: black;
 }
 

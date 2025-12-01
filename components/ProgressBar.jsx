@@ -91,7 +91,7 @@ const Processsection = () => {
 
   return (
     <section className="process-section" id="process">
-      <div className="processsectionheading"><h2>OUR LEGACY</h2></div>
+      <div className="processsectionheading"><h2>Our Legacy</h2></div>
         <div className="process-timeline">
             <div className="timeline-progress">
                 <div className="timeline-progress-bar"></div>

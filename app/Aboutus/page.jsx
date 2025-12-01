@@ -4,6 +4,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ValuesSection from "@/components/valuessection";
 import Availability from "@/components/Availability";
 import Footer from "@/components/footer";
+import Sustainibility from "@/components/sustainibility";
 
 export default function Aboutus() {
   return (
@@ -97,8 +98,12 @@ To become a trusted household name for premium edible oils, embodying health, qu
     </div>
 
 <ValuesSection />
-<Availability />  
+<Availability /> 
+<Sustainibility /> 
+
+
       <Footer />
+
 
 
 
