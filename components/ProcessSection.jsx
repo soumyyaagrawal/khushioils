@@ -40,7 +40,7 @@ export default function ProcessSection() {
                 src={p.img}
                 alt={p.title}
                 className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500 loading=lazy"
-                loading="lazy"
+              
               />
 
               {/* Overlay */}

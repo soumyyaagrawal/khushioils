@@ -33,7 +33,7 @@ export default function Products() {
 <FlagshipCard
   title="Anandam"
   subtitle="Rice Bran Oil"
-  imageSrc="/Products/frame73.svg"
+  imageSrc="/Products/anandRicebran.png"
   features={["Supports heart health and cholesterol management",
 "Delicate flavor that enhances any cuisine",
 "Lightweight and free from harmful fats"]}
@@ -45,7 +45,7 @@ With a focus on purity, it is carefully extracted and refined to preserve its na
 <FlagshipCard
   title="Khushi Gold"
   subtitle="Sunflower Oil"
-  imageSrc="/Products/frame73.svg"
+  imageSrc="/Products/KhushiGoldsunflower.png"
   features={[ "Enriched with Omega 6 and Vitamins A, D, and E for heart health, immunity, and vitality",
 "Free from harmful argemone oil, ensuring safety for your family",
 "Light, non-sticky, and supports healthy cholesterol levels",
@@ -59,7 +59,7 @@ Made with 100% refined sunflower oil and antioxidants for health, strong bones, 
 <FlagshipCard
   title="Khushi Gold"
   subtitle="Rice Bran Oil"
-  imageSrc="/Products/frame73.svg"
+  imageSrc="/Products/KhushiRicebran.png"
   features={["Heart-friendly with good cholesterol properties",
 "Rich in antioxidants and phytosterols",
 "Anti-ageing benefits for a healthy lifestyle",

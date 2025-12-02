@@ -27,7 +27,7 @@ const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = fals
           alt={`${eventName} event`}
           loading="lazy"
         />
-        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[40%] ml-16 mr-12">
+        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[70%] ml-16 mr-12">
           {description}
         </div>
       </div>

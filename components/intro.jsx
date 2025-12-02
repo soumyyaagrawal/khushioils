@@ -1,4 +1,5 @@
 import InfiniteScroll from "@/components/infinitescroll";
+import Link from "next/link"; 
     export default function Intro() {
   return (
     // 1. Main padding and background
@@ -27,9 +28,15 @@ Enriched with Nature, Trusted by Families            </h2>
             
             
             {/* Learn More Button/Link */}
-            <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle w-[280px]">
-                Explore Products <img src="/button.svg" className="inline-block ml-8 hover:animate-pulse hover:rotate-320"/>
-            </button>
+           <Link href="/Products">
+  <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle w-[280px]">
+    Explore Products 
+    <img
+      src="/button.svg"
+      className="inline-block ml-8 hover:animate-pulse hover:rotate-320"
+    />
+  </button>
+</Link>
           </div>
 
           

@@ -21,23 +21,23 @@ export default function HorizontalScrolling() {
     {
       eventName: "Khushi Gold",
       eventDate: "Rice Bran Oil",
-      imageUrl: "/Frame73.svg",
+      imageUrl: "/Products/KhushiRicebran.png",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
+        "Created for the evolving Indian household, our flagship oil stands out with its double-refined purity and a remarkable 13,000 ppm of oryzanol. This rich nutrient profile provides unmatched heart-friendly benefits, making everyday cooking both healthier and tastier. It transforms every dish with clean flavour while supporting your family’s long-term well-being.",
     },
     {
       eventName: "Khushi Gold",
       eventDate: "Sunflower Oil",
-      imageUrl: "/Frame73.svg",
+      imageUrl: "/Products/KhushiGoldsunflower.png",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
+        "Khushi Gold Sunflower Oil is enriched with Omega-6 and a blend of Vitamins A, D, and E to help boost immunity, strengthen bones, and promote radiant, healthy skin. Extracted from premium sunflower seeds and refined to perfection, it carries natural antioxidants that safeguard purity and freshness. It’s a clean, light, and heart-friendly oil you can trust for your family’s long-term health.",
     },
     {
       eventName: "Anandam",
       eventDate: "Rice Bran Oil",
-      imageUrl: "/Frame73.svg",
+      imageUrl: "/Products/anandRicebran.png",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss lorem ipsum dolor sit amet, consectetur adipiscing elit.ss",
+        "Anandam Rice Bran Oil is where purity meets nourishment and taste meets trust. Made from the richest layers of rice bran, it undergoes a meticulous extraction process that protects its natural vitamins, oryzanol, and heart-friendly properties. Smooth, light, and wholesome, it elevates every dish while becoming a daily choice for a healthier lifestyle.",
     },
     // {
     //   eventName: "OIL",
@@ -108,7 +108,7 @@ export default function HorizontalScrolling() {
     <div style={{ position: "relative" }}>
       <section
         ref={eventsSectionRef}
-        className="bg-[#FFF2CE] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[15vh]"
+        className="bg-gradient-to-r from-[#FFF2CE] via-[#ffe396] to-[#ffe294] w-full overflow-hidden flex-col justify-center items-center pt-[5vh] pb-[15vh]"
       >
 
 {/* <AnimatedWave scrollProgress={scrollProgress} />           */}
