@@ -34,12 +34,38 @@ export default function Availability() {
 
       {/* Ecommerce Links */}
       <div className="text-center mt-10">
-        <p className="text-gray-600 text-lg">Also available on</p>
-        <div className="flex justify-center gap-20 mt-4">
-          <Image loading="lazy" src="/Availibility/amazon.png" width={280} height={30} alt="Amazon" /> 
-          <Image loading="lazy" src="/Availibility/flipkart.png" width={120} height={30} alt="Flipkart" />
-        </div>
-      </div>
+
+  <p className="text-gray-600 text-base sm:text-lg">
+    Also available on
+  </p>
+
+  <div
+    className="
+      flex justify-center items-center
+      gap-6 sm:gap-12 lg:gap-20
+      mt-4 flex-wrap
+    "
+  >
+    <Image
+      loading="lazy"
+      src="/Availibility/amazon.png"
+      alt="Amazon"
+      width={280}
+      height={30}
+      className="w-[120px] sm:w-[180px] md:w-[220px] lg:w-[280px] h-auto"
+    />
+
+    <Image
+      loading="lazy"
+      src="/Availibility/flipkart.png"
+      alt="Flipkart"
+      width={120}
+      height={30}
+      className="w-[70px] sm:w-[90px] md:w-[110px] lg:w-[120px] h-auto"
+    />
+  </div>
+</div>
+
     </section>
   );
 }
