@@ -39,7 +39,7 @@ export default function ProcessSection() {
               <img
                 src={p.img}
                 alt={p.title}
-                className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500 loading=lazy"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500"
               
               />
 
