@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar';
 import InfiniteScroll from '@/components/infinitescroll';
 import Button from '@/components/ButtonLink';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -27,10 +28,11 @@ export default function Hero() {
 
         <div className="flex ">
             <Button />
-            <button className="mt-6 ml-4 rounded-full bg-white px-6 py-1 text-lg font-semibold text-black hover:bg-transparent hover:text-white transition duration-300 border border-white">
+            <Link href="/Aboutus">
+            <button className="mt-6 h-15 ml-4 rounded-full bg-white px-6 py-1 text-lg font-semibold text-black hover:bg-transparent hover:text-white transition duration-300 border border-white">
                 Our Story
             </button>
-
+            </Link>
         </div>
         
       </div>

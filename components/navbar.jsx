@@ -206,7 +206,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/Aboutus" },
     { name: "Products", href: "/Products" },
-    { name: "Process", href: "/process" },
+    { name: "Process", href: "/Process" },
   ];
 
   return (

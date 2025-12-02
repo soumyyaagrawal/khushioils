@@ -113,7 +113,7 @@ Mahasamund (C.G.) – 493445</p>
               </button>
 
               <a
-  href="https://wa.me/919876543210?text=Hello%20Bhagwati%20Industries,%20I%20would%20like%20to%20inquire%20about%20your%20products."
+  href="https://wa.me/9826161357?text=Hello%20Bhagwati%20Industries,%20I%20would%20like%20to%20inquire%20about%20your%20products."
   target="_blank"
   className="w-400 bg-gradient-to-r from-green-500 to-green-700 hover:scale-105 transition-transform text-white py-3 px-9 mb-16 rounded-full font-medium"
 >

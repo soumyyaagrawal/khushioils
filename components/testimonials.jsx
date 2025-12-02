@@ -47,23 +47,6 @@ const AchievementCard = ({ imageUrl, gridClass }) => {
   );
 };
 
-
-
-
-
-
- const LinkedinIcon = () => (
-    <svg className="w-5 h-5 block flex-shrink-0 opacity-85 hover:opacity-100 transition-opacity duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-  );
-  const InstagramIcon = () => (
-    <svg className="w-5 h-5 block flex-shrink-0 opacity-85 hover:opacity-100 transition-opacity duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/></svg>
-  );
-
-
-
-
-
-
 // --- Main App Component ---
 export default function Testimonials() {
 
@@ -132,7 +115,7 @@ const [selectedCard, setSelectedCard] = useState(null);
 
  <TestimonialCard
         stars={5}
-        text="WorkNook makes finding a coworking space so easy! I can book a desk in minutes and get straight to work. Highly recommend!"
+        text="Bhagwati oils have been a staple in our kitchen for over 10 years. The authentic taste and purity is unmatched."
         name="Anjani Patel"
         location="Bhilai"
         image="/jao.png"
@@ -140,17 +123,17 @@ const [selectedCard, setSelectedCard] = useState(null);
 
       <TestimonialCard
         stars={5}
-        text="Very friendly staff and quick booking. Loved the ambiance!"
-        name="Rahul Sharma"
-        location="Mumbai"
+        text="The quality speaks for itself. My family trusts Bhagwati for all our cooking needs. Highly recommended!"
+        name="Vijay Agrawal"
+        location="Raipur"
         image="/jao.png"
       />
 
       <TestimonialCard
         stars={5}
-        text="Very friendly staff and quick booking. Loved the ambiance!"
-        name="Rahul Sharma"
-        location="Mumbai"
+        text="Pure, natural, and healthy - exactly what every family needs. Thank you Bhagwati for maintaining such high standards."
+        name="Rajesh Sharma"
+        location="Nagpur"
         image="/jao.png"
       />
       
