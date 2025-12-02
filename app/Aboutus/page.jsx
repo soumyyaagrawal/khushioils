@@ -5,6 +5,7 @@ import ValuesSection from "@/components/valuessection";
 import Availability from "@/components/Availability";
 import Footer from "@/components/footer";
 import Sustainibility from "@/components/sustainibility";
+import Button from "@/components/ButtonLink";
 
 export default function Aboutus() {
   return (
@@ -50,9 +51,8 @@ export default function Aboutus() {
           </p>
 
           {/* BUTTON */}
-          <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle">
-                Explore Products <img src="/button.svg" className="inline-block ml-2 hover:animate-pulse hover:rotate-320"/>
-            </button>
+          
+          <Button />
         </div>
 
       </section>

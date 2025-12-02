@@ -2,6 +2,7 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ProcessSection from "@/components/ProcessSection";
+import Button from "@/components/ButtonLink";
 export default function Process() { return(
         <div className="min-h-screen bg-white">
             <Navbar />
@@ -34,9 +35,8 @@ Our mission goes beyond mere product delivery            </h2>
             
             
             {/* Learn More Button/Link */}
-            <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle w-[280px]">
-                Explore Products <img src="/button.svg" className="inline-block ml-8 hover:animate-pulse hover:rotate-320"/>
-            </button>
+            <Button />
+            
           </div>
         </div>
           <ProcessSection />

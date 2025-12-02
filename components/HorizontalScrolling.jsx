@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
-import AnimatedWave from "@/components/AnimatedWave";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
