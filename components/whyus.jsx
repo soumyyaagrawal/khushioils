@@ -19,7 +19,7 @@ export default function Whyus() {
         <h1
           className="
             text-white text-center text-3xl font-semibold mb-8
-            lg:text-left lg:text-6xl lg:p-4 lg:ml-126 
+            lg:text-left lg:text-6xl lg:p-4 lg:ml-126 lg:mb-0
           "
         >
           What Sets Us Apart
@@ -167,7 +167,7 @@ export default function Whyus() {
         <div
           className="
             w-full p-6 rounded-4xl shadow-sm bg-[#1D5B37] text-white mt-6
-            lg:w-318 lg:h-44 lg:p-8 lg:ml-51 lg:mt-8 lg:hover:shadow-2xl
+            lg:w-318 lg:h-44 lg:p-8 lg:ml-32 lg:mt-4 lg:hover:shadow-2xl
           "
         >
           <span className="text-2xl font-bold lg:text-4xl">Zero Wastage</span>
@@ -182,11 +182,11 @@ export default function Whyus() {
 
           {/* DESKTOP EXACT POSITIONS */}
           <div className="hidden lg:block">
-            <GlassDiv bottom="bottom-25" right="right-67">Solar Panel</GlassDiv>
-            <GlassDiv bottom="bottom-25" right="right-107">Biofuel Burner</GlassDiv>
-            <GlassDiv bottom="bottom-38" right="right-88">Waste Composting</GlassDiv>
-            <GlassDiv bottom="bottom-38" right="right-59">EV</GlassDiv>
-            <GlassDiv bottom="bottom-50" right="right-69">Smart Energy</GlassDiv>
+            <GlassDiv bottom="bottom-15" right="right-47">Solar Panel</GlassDiv>
+            <GlassDiv bottom="bottom-15" right="right-87">Biofuel Burner</GlassDiv>
+            <GlassDiv bottom="bottom-28" right="right-68">Waste Composting</GlassDiv>
+            <GlassDiv bottom="bottom-28" right="right-39">EV</GlassDiv>
+            <GlassDiv bottom="bottom-40" right="right-49">Smart Energy</GlassDiv>
           </div>
 
           <ul className="list-disc list-inside text-sm mt-2">

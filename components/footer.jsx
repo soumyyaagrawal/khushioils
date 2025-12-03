@@ -106,7 +106,7 @@ export default function Footer() {
           text-center md:text-left
         "
       >
-        <p>© {new Date().getFullYear()} Bhagwati Food Oil. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Bhagwati Industries. All Rights Reserved.</p>
         <p className="text-gray-500">Made with ♡ and Purity in India</p>
       </div>
 
