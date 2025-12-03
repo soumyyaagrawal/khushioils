@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from 'next/image';
 
 export default function FlagshipCard({
   title,
@@ -21,16 +22,16 @@ export default function FlagshipCard({
     >
       {/* IMAGE */}
       <div className="w-full md:w-[40%] flex justify-center">
-        <img
-          src={imageSrc}
-          alt={title}
-          loading="lazy"
-          className="
-            rounded-lg drop-shadow-xl 
-            w-[85%] sm:w-[70%] md:w-100 
-            h-100 object-cover
-          "
-        />
+        <div className="relative w-[85%] sm:w-[70%] md:w-100 h-100">
+          <Image
+            src={imageSrc}
+            alt={title}
+            fill
+            className="rounded-lg drop-shadow-xl object-cover"
+            sizes="(max-width: 640px) 85vw, (max-width: 768px) 70vw, 400px"
+            priority={false}
+          />
+        </div>
       </div>
 
       {/* CONTENT */}

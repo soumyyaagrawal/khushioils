@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from 'next/image';
 
 export default function ProcessSection() {
   const [active, setActive] = useState(null);
@@ -35,12 +36,14 @@ export default function ProcessSection() {
               onMouseLeave={() => setHovered(null)}
               onClick={() => setActive(active === i ? null : i)}
             >
-              {/* Background Image */}
-              <img
+              {/* Background Image (Next.js Image) */}
+              <Image
                 src={p.img}
                 alt={p.title}
-                className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500"
-              
+                fill
+                className="absolute inset-0 object-cover object-center transition-all duration-500"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority={false}
               />
 
               {/* Overlay */}
