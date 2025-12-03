@@ -179,3 +179,21 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+html, body {
+  overscroll-behavior-x: none;
+}
