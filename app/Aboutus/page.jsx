@@ -6,6 +6,7 @@ import Availability from "@/components/Availability";
 import Footer from "@/components/footer";
 import Sustainibility from "@/components/sustainibility";
 import Button from "@/components/ButtonLink";
+import Image from "next/image";
 
 export default function Aboutus() {
   return (
@@ -14,11 +15,13 @@ export default function Aboutus() {
       
       {/* ------- TOP BANNER IMAGE ------- */}
       <div className="w-full h-[40vh] relative overflow-hidden">
-        <img
-          src="/AboutusPage/Aboutus.jpg"   // change image here
+        <Image
+          src="/AboutusPage/Aboutus.jpg"
           alt="About Us Banner"
-          loading="lazy"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority={true}
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-white text-6xl font-bold tracking-wide">
@@ -32,11 +35,14 @@ export default function Aboutus() {
 
         {/* LEFT: IMAGE */}
         <div className="flex justify-center">
-          <img
-            src="/AboutusPage/Aboutus1.jpg"  // change image here
+          <Image
+            src="/AboutusPage/Aboutus1.jpg"
             alt="Our Team"
-            loading="lazy"
+            width={500}
+            height={400}
             className="rounded-xl shadow-lg w-[90%] h-auto"
+            sizes="(max-width: 768px) 90vw, 400px"
+            priority={false}
           />
         </div>
 
