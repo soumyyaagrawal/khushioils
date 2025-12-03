@@ -16,12 +16,7 @@ export default function Sustainibility() {
 
       {/* IMAGE + TEXT */}
       <div
-        className="
-          flex flex-col lg:flex-row 
-          justify-center items-center 
-          gap-8 lg:gap-12 
-          mt-9 mb-12
-        "
+        className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-9 mb-12 "
       >
         {/* IMAGE */}
         <Image
@@ -29,25 +24,14 @@ export default function Sustainibility() {
           alt="Sustainability Image"
           width={600}
           height={700}
-          className="
-            rounded-xl shadow-lg
-            w-full sm:w-[80%] md:w-[60%] lg:w-[40%] 
-            h-auto lg:h-[58vh] 
-            object-cover
-          "
+          className="rounded-xl shadow-lg w-full sm:w-[80%] md:w-[60%] lg:w-[40%] h-auto lg:h-[58vh] object-cover"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
           priority={false}
         />
 
         {/* TEXT */}
         <p
-          className="
-            font-semibold text-gray-700 
-            text-center lg:text-left 
-            max-w-2xl 
-            mx-auto lg:mx-0
-            px-2 sm:px-4
-          "
+          className="font-semibold text-gray-700 text-center lg:text-left max-w-2xl mx-auto lg:mx-0 px-2 sm:px-4"
         >
           At Bhagwati Industries, sustainability is at the core of our
           operations. We are dedicated to minimizing our environmental

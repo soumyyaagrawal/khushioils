@@ -41,10 +41,7 @@ export default function Availability() {
 
   <div
     className="
-      flex justify-center items-center
-      gap-6 sm:gap-12 lg:gap-20
-      mt-4 flex-wrap
-    "
+      flex justify-center items-center gap-6 sm:gap-12 lg:gap-20 mt-4 flex-wrap"
   >
     <Image
       loading="lazy"

@@ -1,9 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Phone, Mail } from "lucide-react";
 
 export default function Footer() {
+  const [year, setYear] = useState(null);
+   useEffect(() => {
+    setYear(new Date().getFullYear()); // Runs only on client
+  }, []);
   return (
     <footer className="bg-[#111] text-gray-300 pt-16 pb-0 relative">
 
@@ -106,7 +111,7 @@ export default function Footer() {
           text-center md:text-left
         "
       >
-        <p>© {new Date().getFullYear()} Bhagwati Industries. All Rights Reserved.</p>
+        <p>© {year ?? "2025"} Bhagwati Industries. All Rights Reserved.</p>
         <p className="text-gray-500">Made with ♡ and Purity in India</p>
       </div>
 
