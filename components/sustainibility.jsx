@@ -24,16 +24,19 @@ export default function Sustainibility() {
         "
       >
         {/* IMAGE */}
-        <img
+        <Image
           src="/sustainibility.webp"
-          loading="lazy"
           alt="Sustainability Image"
+          width={600}
+          height={700}
           className="
             rounded-xl shadow-lg
             w-full sm:w-[80%] md:w-[60%] lg:w-[40%] 
             h-auto lg:h-[58vh] 
             object-cover
           "
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 60vw, 40vw"
+          priority={false}
         />
 
         {/* TEXT */}
