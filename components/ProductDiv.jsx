@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = false, isActive = true }) => {
   return (
@@ -21,12 +22,17 @@ const ProductDiv = ({ eventName, eventDate, imageUrl, description, isLast = fals
         </div>
       </div>
       <div className={`flex flex-row gap-6 mt-6 pr-[200px] transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
-        <img 
-          className="w-[20vw] h-auto aspect-square object-cover rounded-xl" 
-          src={imageUrl} 
-          alt={`${eventName} event`}
-          loading="lazy"
-        />
+        <div className="w-[30vw] h-auto aspect-square">
+          <Image 
+            src={imageUrl}
+            alt={`${eventName} event`}
+            width={600}
+            height={600}
+            className="object-cover rounded-xl w-full h-full"
+            sizes="(max-width: 640px) 20vw, (max-width: 1024px) 20vw, 600px"
+            priority={false}
+          />
+        </div>
         <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[70%] ml-16 mr-12">
           {description}
         </div>
