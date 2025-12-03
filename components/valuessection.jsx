@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const stats = [
   { label: "100% Quality Testing", icon: "/values/test.png" },
@@ -30,7 +31,7 @@ export default function ValuesSection() {
                 className="absolute inset-0 border-1 border-gray-300 rounded-full"
                 style={{ clipPath: "inset(0% 0 0 0)" }} // small arc
               />
-              <img src={item.icon} alt="" className="w-16 h-16" />
+              <Image src={item.icon} alt={item.label} width={64} height={64} className="w-16 h-16" />
             </div>
             <p className="mt-3 text-gray-700 font-semibold">{item.label}</p>
           </motion.div>
