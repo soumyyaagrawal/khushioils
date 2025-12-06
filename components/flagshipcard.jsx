@@ -12,13 +12,8 @@ export default function FlagshipCard({
 }) {
   return (
     <div
-      className={`
-        bg-amber-100 rounded-xl shadow-lg p-6 sm:p-8 md:p-10
-        flex flex-col 
-        ${reverse ? "md:flex-row-reverse" : "md:flex-row"}
-        items-center gap-8 md:gap-10 
-        w-full md:h-[450px] mb-12
-      `}
+      className={`bg-amber-100 rounded-xl shadow-lg p-6 sm:p-8 md:p-10 flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"}
+ items-center gap-8 md:gap-10 w-full md:h-[450px] mb-12`}
     >
       {/* IMAGE */}
       <div className="w-full md:w-[40%] flex justify-center">

@@ -166,8 +166,8 @@ export default function Whyus() {
         {/* --------- FINAL BIG GREEN CARD --------- */}
         <div
           className="
-            w-full p-6 rounded-4xl shadow-sm bg-[#1D5B37] text-white mt-6
-            lg:w-318 lg:h-44 lg:p-8 lg:ml-32 lg:mt-4 lg:hover:shadow-2xl
+            absolute w-full p-6 rounded-4xl shadow-sm bg-[#1D5B37] text-white mt-6
+            lg:w-318 lg:h-44 lg:p-8 lg:ml-[215px] lg:mt-4 lg:hover:shadow-2xl
           "
         >
           <span className="text-2xl font-bold lg:text-4xl">Zero Wastage</span>
@@ -182,11 +182,11 @@ export default function Whyus() {
 
           {/* DESKTOP EXACT POSITIONS */}
           <div className="hidden lg:block">
-            <GlassDiv bottom="bottom-15" right="right-47">Solar Panel</GlassDiv>
-            <GlassDiv bottom="bottom-15" right="right-87">Biofuel Burner</GlassDiv>
-            <GlassDiv bottom="bottom-28" right="right-68">Waste Composting</GlassDiv>
-            <GlassDiv bottom="bottom-28" right="right-39">EV</GlassDiv>
-            <GlassDiv bottom="bottom-40" right="right-49">Smart Energy</GlassDiv>
+            <GlassDiv bottom="bottom-5" right="right-15">Solar Panel</GlassDiv>
+            <GlassDiv bottom="bottom-5" right="right-55">Biofuel Burner</GlassDiv>
+            <GlassDiv bottom="bottom-16" right="right-36">Waste Composting</GlassDiv>
+            <GlassDiv bottom="bottom-16" right="right-7">EV</GlassDiv>
+            <GlassDiv bottom="bottom-27" right="right-16">Smart Energy</GlassDiv>
           </div>
 
           <ul className="list-disc list-inside text-sm mt-2">

@@ -41,7 +41,7 @@ const Processsection = () => {
     //   step: ".",
       number: 2018,
       heading: "Market Leader",
-      image: "/BhagwatiLogo.svg",
+      image: "/BhagwatiLogo.png",
       description: "Became the biggest non-basmati rice player after acquiring Dainik Bhaskar's mill, redefining industry standards."
     },
      {

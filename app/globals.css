@@ -181,9 +181,9 @@ body {
 
 
 /* Prevent horizontal scrolling */
-html, body {
+/* html, body {
   overflow-x: hidden;
-}
+} */
 
 /* Hide scrollbar (Chrome, Safari) */
 body::-webkit-scrollbar {
@@ -194,6 +194,4 @@ body::-webkit-scrollbar {
 html {
   scrollbar-width: none;
 }
-html, body {
-  overscroll-behavior-x: none;
-}
+

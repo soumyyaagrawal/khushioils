@@ -14,12 +14,7 @@ export default function Footer() {
 
       {/* TOP SECTION */}
       <div
-        className="
-          container mx-auto 
-          px-6 md:px-10 lg:px-20 
-          grid grid-cols-1 md:grid-cols-2 
-          gap-12 md:gap-8
-        "
+        className="container mx-auto px-6 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8"
       >
         {/* LEFT MESSAGE */}
         <div className="text-center md:text-left">
@@ -33,13 +28,7 @@ export default function Footer() {
 
           <Link
             href="/Contactus"
-            className="
-              mt-6 inline-block 
-              bg-yellow-500 hover:bg-yellow-600 
-              text-black px-5 py-2 rounded-md 
-              font-medium transition-all
-              text-sm md:text-base
-            "
+            className="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-md font-medium transition-all text-sm md:text-base"
           >
             Get In Touch
           </Link>
@@ -47,12 +36,7 @@ export default function Footer() {
 
         {/* RIGHT SECTION (GRID) */}
         <div
-          className="
-            grid 
-            grid-cols-1 sm:grid-cols-2 
-            gap-10 md:gap-8 
-            text-center sm:text-left
-          "
+          className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-8 text-center sm:text-left"
         >
           {/* LOCATION */}
           <div>
@@ -102,14 +86,7 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div
-        className="
-          flex flex-col md:flex-row 
-          justify-between items-center 
-          text-xs md:text-sm 
-          px-6 md:px-10 lg:px-20 
-          pb-4 gap-2 md:gap-0
-          text-center md:text-left
-        "
+        className="flex flex-col md:flex-row justify-between items-center text-xs md:text-sm px-6 md:px-10 lg:px-20 pb-4 gap-2 md:gap-0 text-center md:text-left"
       >
         <p>© {year ?? "2025"} Bhagwati Industries. All Rights Reserved.</p>
         <p className="text-gray-500">Made with ♡ and Purity in India</p>
@@ -125,13 +102,7 @@ export default function Footer() {
         />
 
         <h1
-          className="
-            absolute inset-0 flex justify-center items-start 
-            text-[20vw] md:text-[14vw] 
-            font-bold tracking-widest 
-            text-white/15 select-none 
-            translate-y-[40px] md:translate-y-[50px]
-          "
+          className="absolute inset-0 flex justify-center items-start text-[20vw] md:text-[14vw] font-bold tracking-widest text-white/15 select-none translate-y-[40px] md:translate-y-[50px]"
         >
           BHAGWATI
         </h1>

@@ -156,7 +156,7 @@ export default function Navbar() {
           
           {/* LOGO */}
           <Link href="/" className="cursor-pointer">
-            <img src="/BhagwatiLogo.svg" alt="Logo" className="h-10 w-auto" />
+            <img src="/BhagwatiLogo.png" alt="Logo" className="h-10 w-auto" />
           </Link>
 
           {/* DESKTOP LINKS (unchanged) */}

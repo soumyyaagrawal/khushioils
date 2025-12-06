@@ -37,9 +37,7 @@ export default function Products() {
   features={["Supports heart health and cholesterol management",
 "Delicate flavor that enhances any cuisine",
 "Lightweight and free from harmful fats"]}
-  description="Perfect harmony of taste and health
-
-With a focus on purity, it is carefully extracted and refined to preserve its natural goodness."
+  description="Perfect harmony of taste and health With a focus on purity, it is carefully extracted and refined to preserve its natural goodness."
 />
 
 <FlagshipCard
@@ -50,9 +48,7 @@ With a focus on purity, it is carefully extracted and refined to preserve its na
 "Free from harmful argemone oil, ensuring safety for your family",
 "Light, non-sticky, and supports healthy cholesterol levels",
 "Advanced refining and antioxidant protection for premium quality and longer shelf life"        ]}
-  description="Pure, light, and naturally enriched for your well-being
-
-Made with 100% refined sunflower oil and antioxidants for health, strong bones, and healthy skin"
+  description="Pure, light, and naturally enriched for your well-being. Made with 100% refined sunflower oil and antioxidants for health, strong bones, and healthy skin"
   reverse={true}  
 />
 
