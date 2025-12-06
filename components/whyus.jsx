@@ -10,7 +10,7 @@ export default function Whyus() {
       <section
         id="green"
         className="
-          w-full min-h-screen bg-gradient-to-br from-green-800 to-green-100 relative
+          w-full min-h-screen bg-gradient-to-br from-green-800 to-green-100
           px-4 py-10
           lg:px-0 lg:py-0 lg:h-[100vh]
         "
