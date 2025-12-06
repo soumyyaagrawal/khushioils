@@ -10,7 +10,7 @@ const ProductDiv = ({ eventName, bgimg, eventDate, imageUrl, description, isLast
     alt={`${eventName} background`}
     width={200}
     height={100}
-    className="w-80 h-auto opacity-50 absolute left-1/2 -translate-x-1/2 top-20 -z-10"
+    className="w-80 h-auto opacity-30  0 absolute left-1/2 -translate-x-1/2 top-20 -z-10"
   />
 </div>
 
@@ -43,7 +43,7 @@ const ProductDiv = ({ eventName, bgimg, eventDate, imageUrl, description, isLast
             priority={false}
           />
         </div>
-        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[80%] ml-16 mr-12">
+        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[90%] ml-16 mr-12">
           {description}
         </div>
       </div>

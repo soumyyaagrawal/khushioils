@@ -27,7 +27,7 @@ export default function Footer() {
           </p>
 
           <Link
-            href="/Contactus"
+            href="/contactus"
             className="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-md font-medium transition-all text-sm md:text-base"
           >
             Get In Touch
@@ -73,9 +73,9 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-2">Helpful Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/Aboutus" className="hover:text-white transition">About</Link></li>
-              <li><Link href="/Products" className="hover:text-white transition">Products</Link></li>
-              <li><Link href="/Process" className="hover:text-white transition">Process</Link></li>
+              <li><Link href="/aboutus" className="hover:text-white transition">About</Link></li>
+              <li><Link href="/products" className="hover:text-white transition">Products</Link></li>
+              <li><Link href="/process" className="hover:text-white transition">Process</Link></li>
             </ul>
           </div>
         </div>

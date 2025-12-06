@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 export default function Contactus() {
@@ -11,10 +12,13 @@ export default function Contactus() {
 
       {/* ─────── TOP BANNER ─────── */}
       <div className="relative w-full h-[45vh] overflow-hidden">
-        <img
+        <Image
           src="/ContactusPage/Contactus.webp"
           alt="Contact Us Banner"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority={true}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/20 flex items-center justify-center">
           <div className="text-center">

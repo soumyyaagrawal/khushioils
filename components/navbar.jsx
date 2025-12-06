@@ -150,7 +150,7 @@ export default function Navbar() {
       {/* NAVBAR WRAPPER (Desktop unchanged) */}
       <nav
         ref={navRef}
-        className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-6xl z-50 px-4 sm:px-6 lg:px-8"
+        className="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 px-4 sm:px-6 lg:px-8"
       >
         <div className="mx-auto flex h-20 items-center justify-between bg-transparent backdrop-blur-md shadow-md rounded-[40px] px-6">
           
