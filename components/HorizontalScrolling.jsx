@@ -21,6 +21,7 @@ export default function HorizontalScrolling() {
       eventName: "Khushi Gold",
       eventDate: "Rice Bran Oil",
       imageUrl: "/Products/KhushiRicebran.png",
+      bgimg:"/Khushilogo.png",
       description:
         "Created for the evolving Indian household, our flagship oil stands out with its double-refined purity and a remarkable 13,000 ppm of oryzanol. This rich nutrient profile provides unmatched heart-friendly benefits, making everyday cooking both healthier and tastier. It transforms every dish with clean flavour while supporting your family’s long-term well-being.",
     },
@@ -28,6 +29,7 @@ export default function HorizontalScrolling() {
       eventName: "Khushi Gold",
       eventDate: "Sunflower Oil",
       imageUrl: "/Products/KhushiGoldsunflower.png",
+      bgimg:"/Khushilogo.png",
       description:
         "Khushi Gold Sunflower Oil is enriched with Omega-6 and a blend of Vitamins A, D, and E to help boost immunity, strengthen bones, and promote radiant, healthy skin. Extracted from premium sunflower seeds and refined to perfection, it carries natural antioxidants that safeguard purity and freshness. It’s a clean, light, and heart-friendly oil you can trust for your family’s long-term health.",
     },
@@ -35,6 +37,7 @@ export default function HorizontalScrolling() {
       eventName: "Anandam",
       eventDate: "Rice Bran Oil",
       imageUrl: "/Products/anandRicebran.png",
+      bgimg:"/AnandamLogo.png",
       description:
         "Anandam Rice Bran Oil is where purity meets nourishment and taste meets trust. Made from the richest layers of rice bran, it undergoes a meticulous extraction process that protects its natural vitamins, oryzanol, and heart-friendly properties. Smooth, light, and wholesome, it elevates every dish while becoming a daily choice for a healthier lifestyle.",
     },
@@ -125,6 +128,7 @@ export default function HorizontalScrolling() {
               eventName={event.eventName}
               eventDate={event.eventDate}
               imageUrl={event.imageUrl}
+              bgimg={event.bgimg}
               description={event.description}
               isLast={index === eventsData.length - 1}
               isActive={index === activeIndex}
