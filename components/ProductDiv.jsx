@@ -1,19 +1,18 @@
 import React from 'react'
 import Image from 'next/image';
 
-const ProductDiv = ({ eventName, bgimg,eventDate, imageUrl, description, isLast = false, isActive = true }) => {
+const ProductDiv = ({ eventName, bgimg, eventDate, imageUrl, description, isLast = false, isActive = true }) => {
   return (
     <div className='min-w-full flex flex-col justify-center items-flex-start'>
-<div className="relative w-full">
+      <div className="relative w-full">
   <Image
     src={bgimg}
     alt={`${eventName} background`}
     width={200}
     height={100}
-    className="w-80 h-auto opacity-50 absolute left-1/2  top-28 -z-10"
+    className="w-80 h-auto opacity-50 absolute left-1/2 -translate-x-1/2 top-20 -z-10"
   />
 </div>
-
 
       <div className={`text-4xl mt-4 font-semibold text-gray-900 transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
         {eventName}
@@ -33,7 +32,7 @@ const ProductDiv = ({ eventName, bgimg,eventDate, imageUrl, description, isLast 
         </div>
       </div>
       <div className={`flex flex-row gap-6 mt-6 pr-[200px] transition-all duration-700 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
-        <div className="w-[30vw] h-auto aspect-square relative ">
+        <div className="w-[30vw] h-auto aspect-square">
           <Image 
             src={imageUrl}
             alt={`${eventName} event`}
@@ -44,9 +43,7 @@ const ProductDiv = ({ eventName, bgimg,eventDate, imageUrl, description, isLast 
             priority={false}
           />
         </div>
-        
-        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[70%] ml-16 mr-12 mb-12">
-         
+        <div className="justify-end text-gray-900 flex flex-col text-2xl font-normal w-[80%] ml-16 mr-12">
           {description}
         </div>
       </div>
