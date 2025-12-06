@@ -1,20 +1,13 @@
 "use client";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Image from "next/image";
 import { useMemo, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 
-// import basket from "../../public/infinite_scroll/basket.svg";
-// import Eye from "../../public/infinite_scroll/Eye.svg";
-// import Flag from "../../public/infinite_scroll/Flag.svg";
-// import globe from "../../public/infinite_scroll/globe.svg";
-// import people from "../../public/infinite_scroll/people.svg";
-
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-// const TECHNOLOGY_ICONS = [basket, Eye, Flag, globe, people];
 const LABELS = [
   "40+ Years of Excellence",
   "5M+ Happy Families",
@@ -22,73 +15,66 @@ const LABELS = [
   "Eco-Friendly & Sustainable",
   "15+ Industry Awards",
 ];
-const ELEMENTS = LABELS.map((icon, i) => ({
- 
-  label: LABELS[i],
-}));
-const DOUBLE_ELEMENTS = [...ELEMENTS, ...ELEMENTS];
+
+// Directly duplicate array (no extra mapping needed)
+const DOUBLE_LABELS = [...LABELS, ...LABELS];
 
 const InfiniteScroll = ({ isReversed = false, className }) => {
   const movingContainer = useRef(null);
   const timeline = useRef();
+  const tweenRef = useRef();
 
+  // GSAP infinite scroll animation
   useGSAP(
     () => {
-      const setupInfiniteMarqueeTimeline = () => {
-        gsap.set(movingContainer.current, {
-          xPercent: isReversed ? -50 : 0,
-        });
-        timeline.current = gsap
-          .timeline({ defaults: { ease: "none", repeat: -1 } })
-          .to(movingContainer.current, {
-            xPercent: isReversed ? 0 : -50,
-            duration: 20,
-          })
-          .set(movingContainer.current, { xPercent: 0 });
-      };
-      setupInfiniteMarqueeTimeline();
+      gsap.set(movingContainer.current, {
+        xPercent: isReversed ? -50 : 0,
+      });
+
+      timeline.current = gsap
+        .timeline({ ease: "none", repeat: -1 })
+        .to(movingContainer.current, {
+          xPercent: isReversed ? 0 : -50,
+          duration: 20,
+        })
+        .set(movingContainer.current, { xPercent: 0 });
     },
     { dependencies: [isReversed] }
   );
 
-  let timelineTimeScaleTween = useRef();
+  // Hover slowdown effect
   const onPointerEnter = () => {
     if (!timeline.current) return;
-    timelineTimeScaleTween.current?.kill();
-    timelineTimeScaleTween.current = gsap.to(timeline.current, {
+    tweenRef.current?.kill();
+    tweenRef.current = gsap.to(timeline.current, {
       timeScale: 0.25,
       duration: 0.4,
     });
   };
+
   const onPointerLeave = () => {
     if (!timeline.current) return;
-    timelineTimeScaleTween.current?.kill();
-    timelineTimeScaleTween.current = gsap.to(timeline.current, {
-      timeScale: 0.75 ,
+    tweenRef.current?.kill();
+    tweenRef.current = gsap.to(timeline.current, {
+      timeScale: 0.75,
       duration: 0.2,
     });
   };
 
+  // Render list
   const list = useMemo(
     () => (
       <div className="flex w-fit items-center gap-14 px-10">
-        {DOUBLE_ELEMENTS.map((item, index) => (
+        {DOUBLE_LABELS.map((label, index) => (
           <div
             key={index}
-            className="flex items-center gap-4 mt-2 text-white text-xl font-medium w-[250px] text-center leading-tight"
+            className="flex items-center gap-2 mt-2 text-white text-xl font-medium w-[250px] text-center leading-tight"
             style={{
-              whiteSpace: "normal", // ✅ allow wrapping
-              wordWrap: "break-word", // ✅ break long words cleanly
+              whiteSpace: "normal",
+              wordWrap: "break-word",
             }}
           >
-            {/* <Image
-              src={item.icon}
-              alt={item.label}
-              height={34}
-              width={34}
-              className="object-contain"
-            /> */}
-            <span>{item.label}</span>
+            <span>{label}</span>
           </div>
         ))}
       </div>
@@ -99,29 +85,19 @@ const InfiniteScroll = ({ isReversed = false, className }) => {
   return (
     <div
       className={twMerge(
-        "relative w-full overflow-hidden h-[90px] select-none z-20 py-2 sm:py-4 px-6 sm:px-8", // ✅ padding added here
+        "relative w-full overflow-hidden h-[90px] select-none z-20 py-2 sm:py-0 px-6 sm:px-8 bg-[#1D5B37]",
         className
       )}
       onPointerEnter={onPointerEnter}
       onPointerLeave={onPointerLeave}
       style={{
         position: "relative",
-        // top: "60px", // moved slightly lower
-        backgroundColor: "#1D5B37",
-        // transform: "rotate(-1deg)",
-        transformOrigin: "center",
         boxShadow: "0 4px 25px rgba(0,0,0,0.3)",
-        // maskImage:
-        //   "linear-gradient(to right, transparent 1%, black 15%, black 85%, transparent 100%)",
-        // borderRadius: "12px", // optional for smoother edges
       }}
     >
       <div
         ref={movingContainer}
-        className="flex w-fit items-center gap-4 sm:gap-14 px-8 sm:px-10"
-        style={{
-          height: ["40px", "80px"], // Adjust height for different screen sizes
-        }}
+        className="flex w-fit items-center gap-4 sm:gap-14 px-8 sm:px-10 h-[40px] sm:h-[80px]"
       >
         {list}
       </div>

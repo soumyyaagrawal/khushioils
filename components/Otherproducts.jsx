@@ -47,7 +47,7 @@ export default function OtherProducts() {
           </h3>
 
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-4"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -55,7 +55,7 @@ export default function OtherProducts() {
           >
             {names.map((name, index) => (
               <motion.div
-                key={index}
+                key={index} 
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: {

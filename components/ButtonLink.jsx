@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Button() {
   return (
-    <Link href="/Products">
+    <Link href="/products">
       <button className="mt-6 rounded-full bg-[#D0F348] px-6 py-3 text-lg font-semibold text-gray-900 align-middle w-auto">
         Explore Products
         <Image

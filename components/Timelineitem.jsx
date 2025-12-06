@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 
 const Timelineitem = (props) => {
 return (
@@ -12,7 +13,7 @@ return (
 
         <div className="timeline-center">
             <div className="timeline-arrow">
-                <img src="/ProgressBar/report.png" alt="" />
+                <Image src="/ProgressBar/report.png" alt="progress report icon" width={48} height={48} />
             </div>
         </div>
 
@@ -22,7 +23,7 @@ return (
             </div>
             <div className="timeline-image">
                 <div className="timeline-image-div">
-                    <img src={props.image} alt="" />
+                    <Image src={props.image} alt={props.heading} width={400} height={300} />
                 </div>
             </div>
             <div className="timeline-description">

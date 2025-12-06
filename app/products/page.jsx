@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Products() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen max-w-screen bg-white">
         <Navbar />
       
       {/* ------- TOP BANNER IMAGE ------- */}
@@ -19,12 +19,11 @@ export default function Products() {
           src="/Products/productshero.jpg"   // change image here
           alt="Products Banner"
           fill
-          className="object-cover rounded-3xl"
           sizes="100vw"
           priority={true}
         />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-6xl font-bold tracking-wide">
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center lg:items-center lg:justify-center">
+          <h1 className="text-white text-6xl font-bold tracking-wide items-center lg:items-center">
            Our Premium Products
           </h1>
         </div>
@@ -37,7 +36,7 @@ export default function Products() {
 <FlagshipCard
   title="Anandam"
   subtitle="Rice Bran Oil"
-  imageSrc="/Products/anandRicebran.png"
+  imageSrc="/Products/anandRicebran.webp"
   features={["Supports heart health and cholesterol management",
 "Delicate flavor that enhances any cuisine",
 "Lightweight and free from harmful fats"]}
@@ -47,7 +46,7 @@ export default function Products() {
 <FlagshipCard
   title="Khushi Gold"
   subtitle="Sunflower Oil"
-  imageSrc="/Products/KhushiGoldsunflower.png"
+  imageSrc="/Products/KhushiGoldsunflower.webp"
   features={[ "Enriched with Omega 6 and Vitamins A, D, and E for heart health, immunity, and vitality",
 "Free from harmful argemone oil, ensuring safety for your family",
 "Light, non-sticky, and supports healthy cholesterol levels",
@@ -59,7 +58,7 @@ export default function Products() {
 <FlagshipCard
   title="Khushi Gold"
   subtitle="Rice Bran Oil"
-  imageSrc="/Products/KhushiRicebran.png"
+  imageSrc="/Products/KhushiRicebran.webp"
   features={["Heart-friendly with good cholesterol properties",
 "Rich in antioxidants and phytosterols",
 "Anti-ageing benefits for a healthy lifestyle",

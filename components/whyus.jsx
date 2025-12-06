@@ -1,6 +1,7 @@
 import CountUp from "@/components/CountUp.jsx";
 import GlassDiv from "@/components/glassdiv";
 import WaveDivider from "@/components/wavedivider.jsx";
+import Image from 'next/image';
 
 export default function Whyus() {
   return (
@@ -61,13 +62,9 @@ export default function Whyus() {
             </div>
 
             {/* IMAGE */}
-            <img
-              src="/Apart/drop.png"
-              className="
-                absolute bottom-3 right-0 h-[120px] opacity-70 blur-[5px]
-                lg:h-[200px] lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4 lg:bottom-6 lg:right-4 lg:overflow-hidden
-              "
-            />
+            <div className="absolute bottom-3 right-0 h-[120px] lg:h-[200px] opacity-70 blur-[5px] lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4 lg:bottom-6 lg:right-4 lg:overflow-hidden">
+              <Image src="/Apart/drop.png" alt="Decorative oil drop" fill className="object-cover" />
+            </div>
           </div>
 
           {/* COLUMN 2 (DESKTOP STACK) */}
@@ -90,13 +87,9 @@ export default function Whyus() {
                 </span>
               </div>
 
-              <img
-                src="/Apart/crop.png"
-                className="
-                  absolute bottom-2 right-4 h-[60px] opacity-70 blur-[1.5px]
-                  lg:bottom-10 lg:right-10 lg:h-[80px] lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4
-                "
-              />
+              <div className="absolute bottom-2 right-4 h-[60px] lg:h-[80px] opacity-70 blur-[1.5px] lg:bottom-10 lg:right-10 lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4">
+                <Image src="/Apart/crop.png" alt="Decorative crop" fill className="object-cover" />
+              </div>
             </div>
 
             {/* CARD 3 — BLACK */}
