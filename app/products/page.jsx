@@ -5,6 +5,7 @@ import FlagshipCard from "@/components/flagshipcard";
 import Footer from "@/components/footer";
 import OtherProducts from "@/components/Otherproducts";
 import ChooseUs from "@/components/chooseus";
+import Image from "next/image";
 
 
 export default function Products() {
@@ -14,10 +15,13 @@ export default function Products() {
       
       {/* ------- TOP BANNER IMAGE ------- */}
       <div className="w-full h-[60vh] relative overflow-hidden">
-        <img
+        <Image
           src="/Products/productshero.jpg"   // change image here
           alt="Products Banner"
-          className="w-full h-full object-cover rounded-3xl"
+          fill
+          className="object-cover rounded-3xl"
+          sizes="100vw"
+          priority={true}
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-white text-6xl font-bold tracking-wide">

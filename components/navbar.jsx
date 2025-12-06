@@ -140,9 +140,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/aboutus1" },
-    { name: "Products", href: "/products4" },
-    { name: "Process", href: "/process3" },
+    { name: "About Us", href: "/aboutus" },
+    { name: "Products", href: "/products" },
+    { name: "Process", href: "/process" },
   ];
 
   return (
@@ -178,7 +178,7 @@ export default function Navbar() {
 
           {/* DESKTOP CONTACT BTN (unchanged) */}
           <Link
-            href="/contactus2"
+            href="/contactus"
             className={`hidden md:block rounded-full border px-6 py-2 text-base font-medium transition duration-200 ${
               isWhiteBg
                 ? "border-gray-800 text-gray-900 hover:bg-gray-900 hover:text-white"

@@ -166,8 +166,8 @@ export default function Whyus() {
         {/* --------- FINAL BIG GREEN CARD --------- */}
         <div
           className="
-            absolute w-full p-6 rounded-4xl shadow-sm bg-[#1D5B37] text-white mt-6
-            lg:w-318 lg:h-44 lg:p-8 lg:ml-52 lg:mt-4 lg:hover:shadow-2xl
+            relative w-full p-6 rounded-4xl shadow-sm bg-[#1D5B37] text-white mt-6
+    lg:w-318 lg:h-44 lg:p-8 lg:mt-4 lg:hover:shadow-2xl lg:mx-auto
           "
         >
           <span className="text-2xl font-bold lg:text-4xl">Zero Wastage</span>

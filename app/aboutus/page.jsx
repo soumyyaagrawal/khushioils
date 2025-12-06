@@ -42,7 +42,7 @@ export default function Aboutus() {
             height={400}
             className="rounded-xl shadow-lg w-[90%] h-auto"
             sizes="(max-width: 768px) 90vw, 400px"
-            priority={false}
+            priority={true}
           />
         </div>
 

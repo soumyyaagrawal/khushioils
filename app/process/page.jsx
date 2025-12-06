@@ -9,12 +9,12 @@ export default function Process() { return(
             <Navbar />
             <div className="w-full h-[60vh] relative overflow-hidden">
         <Image
-          src="/Process/process.webp"
+          src="/Process/Process.webp"
           alt="Products Banner"
           fill
           className="object-cover"
           sizes="100vw"
-          priority={false}
+          priority={true}
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-white text-6xl font-bold tracking-wide">
