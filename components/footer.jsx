@@ -95,14 +95,14 @@ export default function Footer() {
       {/* BACKGROUND IMAGE */}
       <div className="relative w-full h-[200px] sm:h-[230px] md:h-[300px] overflow-hidden">
         <Image
-          src="/bg.svg"
+          src="/bg.webp"
           alt="Footer Background"
           fill
-          className="object-cover brightness-[0.6] contrast-125"
+          className="object-cover brightness-[0.7] contrast-125"
         />
 
         <h1
-          className="absolute inset-0 flex justify-center items-start text-[20vw] md:text-[14vw] font-bold tracking-widest text-white/15 select-none translate-y-[40px] md:translate-y-[50px]"
+          className="absolute inset-0 flex justify-center items-start text-[20vw] md:text-[14vw] font-bold tracking-widest text-white/19 select-none translate-y-[40px] md:translate-y-[50px]"
         >
           BHAGWATI
         </h1>

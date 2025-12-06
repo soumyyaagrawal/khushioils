@@ -10,14 +10,14 @@ export default function Hero() {
         className="
          
           flex min-h-[90vh] items-center justify-center 
-          bg-[url('/bg.svg')] bg-cover bg-center px-4 text-center
+          bg-[url('/bg.webp')] bg-cover bg-center px-4 text-center
 
       
           md:justify-start md:items-center md:text-left md:px-6
 
          
           lg:flex lg:min-h-screen lg:items-end lg:justify-start
-          lg:bg-[url('/bg.svg')] lg:bg-cover lg:pb-0 lg:mb-0 lg:bg-left
+          lg:bg-[url('/bg.webp')] lg:bg-cover lg:pb-0 lg:mb-0 lg:bg-left
         "
       >
 

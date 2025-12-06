@@ -167,7 +167,7 @@ export default function Whyus() {
         <div
           className="
             absolute w-full p-6 rounded-4xl shadow-sm bg-[#1D5B37] text-white mt-6
-            lg:w-318 lg:h-44 lg:p-8 lg:ml-[215px] lg:mt-4 lg:hover:shadow-2xl
+            lg:w-318 lg:h-44 lg:p-8 lg:ml-52 lg:mt-4 lg:hover:shadow-2xl
           "
         >
           <span className="text-2xl font-bold lg:text-4xl">Zero Wastage</span>
