@@ -44,7 +44,7 @@ export default function Products() {
 "Light, non-sticky, and supports healthy cholesterol levels",
 "Advanced refining and antioxidant protection for premium quality and longer shelf life"        ]}
   description="Pure, light, and naturally enriched for your well-being. Made with 100% refined sunflower oil and antioxidants for health, strong bones, and healthy skin"
-  reverse={true}  
+    
 />
 
 <FlagshipCard
@@ -56,6 +56,7 @@ export default function Products() {
 "Anti-ageing benefits for a healthy lifestyle",
 "High smoke point, ideal for all types of cooking"]}
   description="Our flagship product designed for the modern Indian kitchen. Double-refined and enriched with oryzanol (13,000 ppm), offering unmatched health benefits while enhancing the taste of every dish."
+  reverse={true}
 />
 
 <FlagshipCard
