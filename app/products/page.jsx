@@ -33,15 +33,7 @@ export default function Products() {
 <h2 className="text-gray-700 font-semibold text-center max-w-8xl mb-12 ml-6 mt-4">Discover our range of premium edible oils, crafted with care for your family's health.</h2>
 
         <div className="flex flex-col items-center justify-center md:px-12">
-<FlagshipCard
-  title="Anandam"
-  subtitle="Rice Bran Oil"
-  imageSrc="/Products/anandRicebran.webp"
-  features={["Supports heart health and cholesterol management",
-"Delicate flavor that enhances any cuisine",
-"Lightweight and free from harmful fats"]}
-  description="Perfect harmony of taste and health With a focus on purity, it is carefully extracted and refined to preserve its natural goodness."
-/>
+
 
 <FlagshipCard
   title="Khushi Gold"
@@ -64,6 +56,16 @@ export default function Products() {
 "Anti-ageing benefits for a healthy lifestyle",
 "High smoke point, ideal for all types of cooking"]}
   description="Our flagship product designed for the modern Indian kitchen. Double-refined and enriched with oryzanol (13,000 ppm), offering unmatched health benefits while enhancing the taste of every dish."
+/>
+
+<FlagshipCard
+  title="Anandam"
+  subtitle="Rice Bran Oil"
+  imageSrc="/Products/anandRicebran.webp"
+  features={["Supports heart health and cholesterol management",
+"Delicate flavor that enhances any cuisine",
+"Lightweight and free from harmful fats"]}
+  description="Perfect harmony of taste and health With a focus on purity, it is carefully extracted and refined to preserve its natural goodness."
 />
 
 </div>

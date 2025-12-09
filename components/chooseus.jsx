@@ -40,7 +40,7 @@ export default function ChooseUs() {
         {services.map((service, idx) => (
           <div
             key={idx}
-            className={`relative group h-20 rounded-xl overflow-hidden bg-cover bg-center shadow-md  ${service.iconBg} `}
+            className={`relative group w-auto h-20 rounded-xl overflow-hidden bg-cover bg-center shadow-md  ${service.iconBg} `}
             
           >
             
