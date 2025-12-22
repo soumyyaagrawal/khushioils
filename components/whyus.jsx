@@ -11,9 +11,9 @@ export default function Whyus() {
       <section
         id="green"
         className="
-          w-full min-h-screen bg-gradient-to-br from-green-800 to-green-100
+          w-full min-h-[100vh] bg-gradient-to-br from-green-800 to-green-100 overflow-x-hidden
           px-4 py-10
-          lg:px-0 lg:py-0 lg:h-[100vh]
+          lg:px-0 lg:py-0
         "
       >
         {/* HEADLINE */}

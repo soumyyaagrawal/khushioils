@@ -7,10 +7,7 @@ export default function Hero() {
   return (
     <>
       <div
-        className="
-         
-          flex min-h-[90vh] items-center justify-center 
-          bg-[url('/bg.webp')] bg-cover bg-center px-4 text-center
+        className="flex min-h-[90vh] items-center justify-center bg-[url('/bg.webp')] bg-cover bg-center px-4 text-center
 
       
           md:justify-start md:items-center md:text-left md:px-6
