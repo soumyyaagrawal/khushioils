@@ -18,8 +18,7 @@ export default function WaveDivider() {
    <div className="w-full overflow-hidden">
   <svg
     viewBox="0 0 1200 120"
-    preserveAspectRatio="none"
-    className="w-full h-[120px]"
+    className="w-full aspect-[10/1]"
   >
     <defs>
       <linearGradient id="waveGradient" x1="0%" y1="100%" x2="100%" y2="0%">

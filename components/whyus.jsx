@@ -62,7 +62,7 @@ export default function Whyus() {
             </div>
 
             {/* IMAGE */}
-            <div className="absolute bottom-3 right-0 h-[120px] lg:h-[200px] opacity-70 blur-[5px] lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4 lg:bottom-6 lg:right-4 lg:overflow-hidden">
+            <div className="absolute bottom-3 right-0 w-[120px] h-[120px] lg:w-[200px] lg:h-[200px] opacity-70 blur-[5px] lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4 lg:bottom-6 lg:right-4 overflow-hidden">
               <Image src="/Apart/drop.png" alt="Decorative oil drop" fill className="object-cover" />
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Whyus() {
                 </span>
               </div>
 
-              <div className="absolute bottom-2 right-4 h-[60px] lg:h-[80px] opacity-70 blur-[1.5px] lg:bottom-10 lg:right-10 lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4">
+              <div className="absolute bottom-2 right-4 w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] opacity-70 blur-[1.5px] lg:bottom-10 lg:right-10 lg:scale-150 lg:translate-x-1/4 lg:translate-y-1/4 overflow-hidden">
                 <Image src="/Apart/crop.png" alt="Decorative crop" fill className="object-cover" />
               </div>
             </div>
