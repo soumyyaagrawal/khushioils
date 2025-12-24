@@ -217,7 +217,7 @@ export default function Navbar() {
               ))}
 
               <Link
-                href="/Contactus"
+                href="/contactus"
                 onClick={() => setMobileOpen(false)}
                 className="text-center mt-4 rounded-full border border-gray-800 px-4 py-2"
               >
