@@ -62,7 +62,7 @@ export default function Footer() {
           {/* SOCIAL */}
           <div>
             <h3 className="text-white font-semibold mb-2">Social</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm ">
               <li><Link href="https://instagram.com" className="hover:text-white transition">Instagram</Link></li>
               <li><Link href="https://linkedin.com" className="hover:text-white transition">LinkedIn</Link></li>
               <li><Link href="https://facebook.com" className="hover:text-white transition">Facebook</Link></li>
@@ -100,9 +100,9 @@ export default function Footer() {
           fill
           className="object-cover brightness-[0.7] contrast-125"
         />
-
+  
         <h1
-          className="absolute inset-0 flex justify-center items-start text-[20vw] md:text-[14vw] font-bold tracking-widest text-white/19 select-none translate-y-[40px] md:translate-y-[50px]"
+          className="absolute inset-0 flex justify-center items-start text-[20vw] md:text-[14vw] font-bold tracking-widest text-white/19 select-none translate-y-[40px] md:translate-y-[50px] "
         >
           BHAGWATI
         </h1>

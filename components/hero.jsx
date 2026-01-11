@@ -97,7 +97,7 @@ export default function Hero() {
           >
             <Button />
 
-            <Link href="/Aboutus">
+            <Link href="/aboutus">
               <button
                 className="
                   /* mobile */
